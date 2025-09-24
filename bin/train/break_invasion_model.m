@@ -87,6 +87,8 @@ mfull=mfull0;
 
 %Antonia: Update CHR to only include bins with at least one event
 CHR = unique(bins(:,1))';
+excluded = setdiff(1:23, CHR);
+disp(['Excluded chromosomes: ' num2str(excluded)])
 
 R = MarginalProbability(bins_event_tble,events00,numbins); 
 
