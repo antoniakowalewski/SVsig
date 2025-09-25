@@ -95,7 +95,9 @@ hits_table=table();
 hits_table.cluster_num = annotated_table.hit_num;
 hits_table.sid = annotated_table.sid;
 hits_table.gene_i = annotated_table.gene_i;
+hits_table.all_genes_i = annotated_table.nearby_genes_i;
 hits_table.gene_j = annotated_table.gene_j;
+hits_table.all_genes_j = annotated_table.nearby_genes_j;
 
 hits_table.subtype = annotated_table.dcc_project_code;
 hits_table.chr_i = annotated_table.seqnames;
