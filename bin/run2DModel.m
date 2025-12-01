@@ -16,10 +16,10 @@ WorkDir = pwd;
 addpath(genpath(pwd));
 
 %path to rearrangements_file
-sv_file='/data/UVM_TP-NB.SV_svsig.csv'
+sv_file='/data/prad_freeze_4_22_2025.SV_svsig.csv'
 
 %path to write output file with significant 2D hits %
-output_file = '/Users/akowalew/SVsig-1/results/uvm_results_fdr0.1.txt'
+output_file = '/Users/akowalew/SVsig-1/results/prad_results2_fdr0.1.txt'
 
 
 %%%%%%%%% set additional parameters %%%%%%%%%
