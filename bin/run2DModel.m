@@ -9,21 +9,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% set working directory %%%
-pwd = '/Users/shu/SVsig_labcopy'
+pwd = '/Users/akowalew/SVsig-1'
 
 global WorkDir
 WorkDir = pwd;
 addpath(genpath(pwd));
 
 %path to rearrangements_file
-%sv_file='/data/merged_1.6.1.csv'
-sv_file='/data/tutorial_rearrangements.csv'
-
-
-
+sv_file='/data/UVM_TP-NB.SV_svsig.csv'
 
 %path to write output file with significant 2D hits %
-output_file = '/Users/shu/SVsig_labcopy/results/tutorial_hitsalljunctions_fdr0.01_1e6bins.txt'
+output_file = '/Users/akowalew/SVsig-1/results/uvm_results_fdr0.1.txt'
 
 
 %%%%%%%%% set additional parameters %%%%%%%%%
@@ -55,7 +51,7 @@ len_filter=1e6;
 bks_cluster=1;
 %param FDR_threshold sets the q value cut off, default 0.1
 global FDR_THRESHOLD
-FDR_THRESHOLD = 0.01;
+FDR_THRESHOLD = 0.1;
 %set random seed for reproducibility%
 %rng(3014)
 
@@ -67,9 +63,9 @@ global bin_length %length of bins for adjacency matrix
 bin_length=1e6;
 
 global CHR %which chromosomes to consider in building the matrix
-CHR = 1:23;
+CHR = 1:24;
 global genome_build %hg_19 or hg_38
-genome_build='hg_19';
+genome_build='hg_38';
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

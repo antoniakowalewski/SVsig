@@ -31,7 +31,7 @@ pad=1e4;
 numa=nargin-1;
 nume=length(events);
 
-annot_array=zeros(nume,7+numa);
+annot_array=zeros(nume,10+numa);
 annot_array(:,1)=ones(nume,1);
 annot_array(:,2)=events(:,1)==events(:,4)&abs(events(:,5)-events(:,2))<=short;
 annot_array(:,3)=events(:,1)==events(:,4)&abs(events(:,5)-events(:,2))>short;

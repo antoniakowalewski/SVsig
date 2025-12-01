@@ -68,7 +68,7 @@ end
 disp ('done with HitsTableCV')
 
 CuratedFusionGene0=CuratedFusionGene(1:end-3,:);
-TbyGene_mix = TophitsByGenes(hitstable_mix,hitstable_mix_lookup,1e4,bins,refgene,refgene_tble, [] ,CosmicCencus,CuratedFusionGene0,[]);
+TbyGene_mix = TophitsByGenes(hitstable_mix,hitstable_mix_lookup,1e4,bins,refgene,refgene_tble, [] ,CosmicCensus,CuratedFusionGene0,[]);
 
 
 
