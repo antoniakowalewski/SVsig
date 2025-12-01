@@ -107,11 +107,14 @@ while sum(counted_bins)>0,
 
     [gene_i, gene_j] = known_cancer_genes_annot(gene_i, gene_j, uFusionTable, CosmicCencus);
 
-    %Antonia: Move genes with asterisks to the front of the list
-    prioritize = endsWith(string(gene_i), "*");
-    gene_i = [gene_i(prioritize), gene_i(~prioritize)];
-    prioritize = endsWith(string(gene_j), "*");
-    gene_j = [gene_j(prioritize), gene_j(~prioritize)];
+    % Antonia: Move genes with asterisks to the front of the list
+    % Two asterisks = COSMIC fusion, one asterisk = COSMIC gene
+    prioritize1 = endsWith(string(gene_i), "**");
+    prioritize2 = endsWith(string(gene_i), "*");
+    gene_i = [gene_i(prioritize1), gene_i(prioritize2), gene_i(~prioritize2)];
+    prioritize1 = endsWith(string(gene_i), "**");
+    prioritize2 = endsWith(string(gene_j), "*");
+    gene_j = [gene_j(prioritize1), gene_j(prioritize2), gene_j(~prioritize2)];
     
     TbyGene(Tc).pos_i = sprintf('%2d:%9d-%9d',range(Tc,1),range(Tc,2),range(Tc,3));
     TbyGene(Tc).pos_j = sprintf('%2d:%9d-%9d',range(Tc,4),range(Tc,5),range(Tc,6));
