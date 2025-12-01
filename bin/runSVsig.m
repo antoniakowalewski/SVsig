@@ -107,6 +107,7 @@ hits_table.chr_j = annotated_table.altchr;
 hits_table.pos_j = annotated_table.altpos;
 hits_table.strand_j = annotated_table.altstrand;
 hits_table.pval = annotated_table.pval;
+hits_table.qval = annotated_table.qval;
 hits_table.prob = annotated_table.p_mix;
 
 
@@ -136,7 +137,7 @@ end
 
 %put num_samp in the hits_table
 for c1= 1:size(hits_table, 1)
-hits_table.num_hits(c1) = num_samp(hits_table.cluster_num(c1));
+    hits_table.num_hits(c1) = num_samp(hits_table.cluster_num(c1));
 end 
     
 
