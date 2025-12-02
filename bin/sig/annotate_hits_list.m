@@ -32,6 +32,7 @@ end
             chits.nearby_genes_j = repmat({TbyGene_Table(c1).gene_j},height(chits),1);
             chits.hit_num=c1*ones(sum(SVTable_lines),1);
             chits.pval=str2double(TbyGene_Table(c1).p_val)*ones(sum(SVTable_lines),1);
+            chits.qval=str2double(TbyGene_Table(c1).q_val)*ones(sum(SVTable_lines),1);
             chits.tile_num=c2*ones(sum(SVTable_lines),1);
             chits.u_tile_num=ct*ones(sum(SVTable_lines),1);
             ct=ct+1;

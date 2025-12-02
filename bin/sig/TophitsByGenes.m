@@ -110,10 +110,10 @@ while sum(counted_bins)>0,
     % Antonia: Move genes with asterisks to the front of the list
     % Two asterisks = COSMIC fusion, one asterisk = COSMIC gene
     prioritize1 = endsWith(string(gene_i), "**");
-    prioritize2 = endsWith(string(gene_i), "*");
+    prioritize2 = endsWith(string(gene_i), "*") & ~prioritize1;
     gene_i = [gene_i(prioritize1), gene_i(prioritize2), gene_i(~(prioritize1 | prioritize2))];
     prioritize1 = endsWith(string(gene_j), "**");
-    prioritize2 = endsWith(string(gene_j), "*");
+    prioritize2 = endsWith(string(gene_j), "*") & ~prioritize1;
     gene_j = [gene_j(prioritize1), gene_j(prioritize2), gene_j(~(prioritize1 | prioritize2))];
     
     TbyGene(Tc).pos_i = sprintf('%2d:%9d-%9d',range(Tc,1),range(Tc,2),range(Tc,3));

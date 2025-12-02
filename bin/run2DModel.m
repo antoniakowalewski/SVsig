@@ -8,6 +8,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+global sv_file
+global len_filter
+global bks_cluster
+global std_filter
+
 %%% set working directory %%%
 pwd = '/Users/akowalew/SVsig-1'
 
@@ -19,13 +24,14 @@ addpath(genpath(pwd));
 sv_file='/data/prad_freeze_4_22_2025.SV_svsig.csv'
 
 %path to write output file with significant 2D hits %
-output_file = '/Users/akowalew/SVsig-1/results/prad_results2_fdr0.1.txt'
+output_file = '/Users/akowalew/SVsig-1/results/prad_results_fdr0.1.txt'
 
 
 %%%%%%%%% set additional parameters %%%%%%%%%
 
 %to use loaded background model set to true
 %otherwise false to recalculate background model 
+global model_exist
 model_exist = false;
 
 %run simple or complex model 
