@@ -39,6 +39,7 @@ end
 for c1=length(list_prim)+1:length(list_prim)+length(list_sec),
     refgene_loc=find([refgene.rg(:).locus_id]==list_sec(c1-length(list_prim)));
     if ~isempty(refgene_loc)
+        % Add parentheses around genes only in pad regions
         rg_symbol(c1)={strcat('(',refgene.rg(refgene_loc(1)).symb,')')};
         pos(c1,1)=min([refgene.rg(refgene_loc).start]);
         pos(c1,2)=max([refgene.rg(refgene_loc).xEnd]);

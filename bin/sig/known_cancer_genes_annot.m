@@ -23,14 +23,14 @@ if len_i>0 && len_j>0
     
     for c1=1:len_i,
         for c2=1:len_j,
-            if sum(strcmp(gene_i0(c1),uFusionTable(:,1))&strcmp(gene_j0(c2),uFusionTable(:,2)))>0
+            if any(strcmp(gene_i0(c1),uFusionTable(:,1))&strcmp(gene_j0(c2),uFusionTable(:,2)))
                 known_genes_i(c1,1)=1;
                 known_genes_j(c2,1)=1;
-            elseif sum(strcmp(gene_i0(c1),CosmicCensus(:,1)))>0 || sum(strcmp(gene_j0(c2),CosmicCensus(:,1)))>0
-                if sum(strcmp(gene_i0(c1),CosmicCensus(:,1)))>0
+            elseif any(strcmp(gene_i0(c1),CosmicCensus(:,1))) || any(strcmp(gene_j0(c2),CosmicCensus(:,1)))
+                if any(strcmp(gene_i0(c1),CosmicCensus(:,1)))
                     known_genes_i(c1,2)=1;
                 end
-                if sum(strcmp(gene_j0(c2),CosmicCensus(:,1)))>0 
+                if any(strcmp(gene_j0(c2),CosmicCensus(:,1))) 
                     known_genes_j(c2,2)=1;
                 end
             end
