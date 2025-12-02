@@ -1,14 +1,9 @@
-
-global refgene sij1dx sij1dy
-global num_breakpoints_per_bin
+global sij1dx 
+global sij1dy
 global WorkDir
-global complex
-global weights
 global CHR
 global bins_event_tble
 global genome_build
-global bin_length
-
 
 
 EventsFile=sv_file;

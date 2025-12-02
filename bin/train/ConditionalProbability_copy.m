@@ -29,7 +29,8 @@ else  % global intra_chr ratio
     end
     intra_chr=repmat(intra_chr_a,nChr,1);
 end
-nume=length(events);
+
+nEvents = size(events,1);
 
 % calculate the 1D Sij distribution
 % sij1dy = EventLengthDist(sij1dx,events,chsize,EventLengthThreshold,CHR,0);
@@ -78,7 +79,41 @@ for k = 1:nChr
     firstbin=find(bins(:,1)==cChr,1);
     lastbin=find(bins(:,1)==cChr,1,'last');
     chr_intra = firstbin:lastbin; 
+
+    % If only 1 bin in chromosome
+
+    if firstbin == lastbin
+        c2 = firstbin;
+        sij(c2, c2, :) = 1;
+
+        inter_area = (lastbin-firstbin+1) * ...
+                     (bpsize - (bins(lastbin,3) - bins(firstbin,2)));
+
+        for ca = 1:num_annot
+            % symmetrize intra
+            sij(chr_intra, chr_intra, ca) = ...
+                sij(chr_intra, chr_intra, ca) + sij(chr_intra, chr_intra, ca)';
+
+            % set inter-chrom weights for this single bin
+            if lastbin < size(bins,1)
+                cols_right = lastbin+1:size(bins,1);
+                sij(firstbin:lastbin, cols_right, ca) = ...
+                    repmat((bins(cols_right,3) - bins(cols_right,2))', lastbin-firstbin+1, 1);
+            end
+
+            if firstbin > 1
+                cols_left = 1:firstbin-1;
+                sij(firstbin:lastbin, cols_left, ca) = ...
+                    repmat((bins(cols_left,3) - bins(cols_left,2))', lastbin-firstbin+1, 1);
+            end
+            
+        end
+        continue;
+    end
     
+
+    % If >1 bin in chromosome
+
     c2=firstbin;
     %find midpoint of bin
     diag_bin = sum(bins(c2,2:3),2)/2;
@@ -96,7 +131,7 @@ for k = 1:nChr
     % add similar correction to bin 2 and 3...
     %Kiran: fix bug for last_diag = = 2 
         if last_diag == 2 
-        sij(c2, c2, :) = ( (1-sd_sij1dx(1:last_diag-1)/diag_bin_size)*squeeze(sij1_area(1:last_diag-1,k,:))' + (diag_bin_size - sij1dx(last_diag)-1)^2/diag_bin_size/2 * interp1(sij1dx',squeeze(sij1dy(:,k,:)),diag_bin_size,'pchip'));      
+        sij(c2,c2,:) = ( (1-sd_sij1dx(1:last_diag-1)/diag_bin_size)*squeeze(sij1_area(1:last_diag-1,k,:))' + (diag_bin_size - sij1dx(last_diag)-1)^2/diag_bin_size/2 * interp1(sij1dx',squeeze(sij1dy(:,k,:)),diag_bin_size,'pchip'));      
         %this is what is in lij
         %sij(c2,c2) = ( sij1dy(1:last_diag-1, c1, :)'*d_sij1dx(1:last_diag-1) + (diag_bin_size - sij1dx(last_diag)-1) * interp1(sij1dx',squeeze(sij1dy(:,c1,:)),diag_bin_size,'pchip'))/(diag_bin_size-sij1dx(1));    
         %sij(c2, c2, :) = ( (1-sd_sij1dx(1:last_diag-1))*squeeze(sij1_area(1:last_diag-1,c1,:))' + (diag_bin_size - sij1dx(last_diag)-1) * interp1(sij1dx',squeeze(sij1dy(:,c1,:)),diag_bin_size,'pchip'))/(diag_bin_size-sij1dx(1));      
@@ -165,10 +200,10 @@ for k = 1:nChr
    end
 end
 
-annot_frac(1) = sum(events(:,3)==1&events(:,6)==1)/nume;
-annot_frac(2) = sum(events(:,3)==1&events(:,6)==2)/nume;
-annot_frac(3) = sum(events(:,3)==2&events(:,6)==1)/nume;
-annot_frac(4) = sum(events(:,3)==2&events(:,6)==2)/nume;
+annot_frac(1) = sum(events(:,3)==1&events(:,6)==1)/nEvents;
+annot_frac(2) = sum(events(:,3)==1&events(:,6)==2)/nEvents;
+annot_frac(3) = sum(events(:,3)==2&events(:,6)==1)/nEvents;
+annot_frac(4) = sum(events(:,3)==2&events(:,6)==2)/nEvents;
 
 for ca=1:num_annot
     

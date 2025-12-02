@@ -2,10 +2,12 @@ function R = MarginalProbability(bins_event_tble,events,numbins)
 
 disp ('calculating marginal probabilities...');
 
+nEvents = size(events,1);
+
 %bins_event_tble: col1, col2 are bin indices, col3 is tile index
 %R=zeros(numbins,num_annot);
 R=zeros(numbins,1);
-for c1=1:length(events),
+for c1=1:nEvents,
 %     R(bins_event_tble(c1,1),(events(c1,3)-1)*2+events(c1,6))=R(bins_event_tble(c1,1),(events(c1,3)-1)*2+events(c1,6))+1;
 %     R(bins_event_tble(c1,2),(events(c1,3)-1)*2+events(c1,6))=R(bins_event_tble(c1,2),(events(c1,3)-1)*2+events(c1,6))+1;
     R(bins_event_tble(c1,1))=R(bins_event_tble(c1,1))+1;

@@ -16,9 +16,11 @@ global weights
 annot_tiles=tiles_annot_copy('length',events,bins,CHR);
 %annot_tiles=tiles_annot('length',events,bins,CHR);
 
-
-
 % setting up some needed variables
+
+model1
+model2
+
 num_param=length(annot_tiles(1,1,:));
 alpha=0.5*ones(num_param,1);
 if issymmetric(model1)
@@ -163,7 +165,7 @@ mix_model=mix_model/sum(mix_model(:));
 %mfull are the values of the "poisson" distributed xij, mix_model are the
 %pijs, nume is N 
         sLij = sum(sum(mfull(nnz_idc).*log(nume*mix_model(nnz_idc))-nume*mix_model(nnz_idc)-log_fac(mfull(nnz_idc)+1)')) ;
-        zLij = sum(sum(-nume*mix_model(z_idc)))  ; 
+        zLij = sum(sum(-nume*mix_model(z_idc)))  ;
         %xLij= sum(sum(mfull(z_idc).*log(nume*mix_model(z_idc))));
          %zLij = sum(sum(-nume*mix_model(nnz_idc)))  ; 
 

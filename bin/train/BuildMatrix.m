@@ -4,6 +4,8 @@ function [mfull , bins_event_tble] = BuildMatrix(events,bins,num_annot)
 
 disp('building event matrix...');
 
+nEvents = size(events,1);
+
 %why make num_annot > 1 ?
 %artifact from Ofer's code for binning 4 types of rearrangments
 %but I don't see where events are being subsetted
@@ -21,11 +23,11 @@ end
 %initialize bins_event_tble
 %changed from 5 to 3 columns because 4th and 5th columns were not being
 %used
-bins_event_tble = zeros(length(events),3);
+bins_event_tble = zeros(nEvents,3);
 
 %loop through all events (table of pairs of breakpoints)
 %for each row
-for c1 = 1:length(events)   
+for c1 = 1:nEvents
     %find the indices of the bins in which the ith and jth breaks fall in        
     bins_event_tble(c1,1) = find(bins(:,1)==events(c1,1) & bins(:,2)<=events(c1,2) & bins(:,3)>=events(c1,2));
     bins_event_tble(c1,2) = find(bins(:,1)==events(c1,4) & bins(:,2)<=events(c1,5) & bins(:,3)>=events(c1,5));

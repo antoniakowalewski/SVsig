@@ -12,6 +12,7 @@ global sv_file
 global len_filter
 global bks_cluster
 global std_filter
+global hits_table
 
 %%% set working directory %%%
 pwd = '/Users/akowalew/SVsig-1'
@@ -21,10 +22,10 @@ WorkDir = pwd;
 addpath(genpath(pwd));
 
 %path to rearrangements_file
-sv_file='/data/prad_freeze_4_22_2025.SV_svsig.csv'
+sv_file='/data/thca_freeze_4_22_2025.SV_svsig.csv'
 
 %path to write output file with significant 2D hits %
-output_file = '/Users/akowalew/SVsig-1/results/prad_results_fdr0.1.txt'
+output_file = '/Users/akowalew/SVsig-1/results/thca_results_fdr0.1.txt'
 
 
 %%%%%%%%% set additional parameters %%%%%%%%%
