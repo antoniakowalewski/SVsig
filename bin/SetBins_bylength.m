@@ -33,5 +33,5 @@ for c1 = CHR
 
 end
 
-numbins = length(bins);   
+numbins = height(bins);   
 

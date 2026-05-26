@@ -12,8 +12,7 @@ annot_tiles=tiles_annot_copy('length',events,bins,CHR);
  short_ratio=(sum(sum(mat_ratios(annot_tiles(:,:,2)))))/(sum(sum(mat_ratios)));
  long_ratio=(sum(sum(mat_ratios(annot_tiles(:,:,3)))))/(sum(sum(mat_ratios)));
  inter_ratio=(sum(sum(mat_ratios(annot_tiles(:,:,4)))))/(sum(sum(mat_ratios)));
-    
-    
+
 normalized_mat=zeros(size(mat,1),size(mat,2));
 
 diag_short_annot = (sum(sum(mat(annot_tiles(:,:,1)))))/(sum(sum(mat)));

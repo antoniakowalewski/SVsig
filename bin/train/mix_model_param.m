@@ -118,7 +118,7 @@ mix_model=mix_model/sum(mix_model(:));
      
         nnz_idc=mix_model>0&mfull>0;
 %       nnz_idc=mix_model>0;
-        z_idc =  mfull == 0;     
+        z_idc =  mfull == 0;
 
 % change loglikelihood to compress long and ic
     mfull_short = mfull(annot_tiles(:, :, 1)); 
@@ -141,11 +141,11 @@ mix_model=mix_model/sum(mix_model(:));
    % sum(abs(nume*m1_short - mfull_short))
     %sum(abs(nume*m2_short - mfull_short))
     
-     sum(nume*m1_long)- mfull_long
-    sum(nume*m2_long) - mfull_long
+    sum(nume*m1_long)- mfull_long;
+    sum(nume*m2_long) - mfull_long;
     
-    sum(nume*m1_ic) - mfull_ic
-    sum(nume*m2_ic) - mfull_ic
+    sum(nume*m1_ic) - mfull_ic;
+    sum(nume*m2_ic) - mfull_ic;
      
     
     nnzs_idc = mm_short > 0;
@@ -193,5 +193,3 @@ mix_model=mix_model/sum(mix_model(:));
 
  end
 %import opt_alpha
-        
-

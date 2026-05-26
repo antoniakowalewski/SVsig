@@ -13,15 +13,30 @@ global bin_length
 
 EventsFile=sv_file;
 
-load(strcat(WorkDir,'/data/tracks/MiscVar')); % run gen_misc_var to update variables
-fragile_track=importdata([WorkDir '/data/tracks/fragile_genes_smith.hg19fp.bed.txt']);
-%fragile_track=importdata([WorkDir 'data//tracks/HumCFS_hg38_lift_hg19.txt']);
-
-
-if genome_build == 'hg_38'
-    fragile_track=importdata([WorkDir '/data/tracks/fragile_genes.hg38.txt']);
-    chsize=importdata([WorkDir '/data/tracks/chsize_hg38.txt']);
+if strcmp(genome_build,'hg_19'),
+    load(strcat(WorkDir,'/data/tracks/MiscVar'));
+elseif strcmp(genome_build,'hg_38'),
+    load(strcat(WorkDir,'/data/tracks/MiscVar_hg38'));
 end
+    % cancer_genes_track: Coordinates of genes in CosmicCensus
+    % chsize: Chromosome lengths
+    % CosmicCensus: Gene names from Cosmic CGC v103
+    % CuratedFusionGene: Known fusions from Cosmic CGC v103. Generated from Cosmic file as follows:
+        %awk -F '\t' 'NR>1 && $17 != "" {
+        %    n = split($17, a, /, */)
+        %    for (i = 1; i <= n; i++) {
+        %        if (a[i] != "")
+        %            print $1 "\t" a[i]
+        %    }
+        %}' Cosmic_CancerGeneCensus_v103_GRCh38.tsv > translocation_pairs.tsv
+    % fragile_track: From file /data/tracks/fragile_genes.hg38.txt
+    % l1_track: Lifted over from MiscVar_hg19 for now
+    % mask_track: Lifted over from MiscVar_hg19 for now. Only 96/585 records successfully lifted over
+    % TAD_track: Lifted over from MiscVar_hg19 for now
+    % refgene: From UCSC refGene file. Removed non-canonical chromosomes (e.g.
+    % chr1_KI270763v1_alt) and added locus_id based on "symb" (gene name)
+    % refgene_tble: Selected columns from refgene.rg (chrn, start, xEnd, locus_id)
+    % gene_track: Selected columns from refgene.rg (chrn, start, xEnd)
 
 % CHR = 1:23; % chromosomes to include in analysis
 %now global variable
@@ -52,7 +67,7 @@ Weights_column = 11;
 % set bins boundries 
 % returns a table of bins with chr number, start and end position, and number of breakpoints per bin
 %[bins0, numbins] = SetBins(events0,num_breakpoints_per_bin,chsize,CHR,min_bin_dist); 
-[bins0, numbins] = SetBins_bylength(events0, bin_length, chsize,CHR); 
+[bins0, numbins] = SetBins_bylength(events0, bin_length, chsize,CHR);
 
 % 2026/02/17: exported bins0 as the bin boundary definitions, before we
 % drop the empty bins
@@ -67,8 +82,6 @@ Weights_column = 11;
 %modelp2=load('/Users/shu/2d_results/20210722_mixmodel_500kb.mat');
 %bins0=modelp2.bins;
 %numbins=length(bins0);
-
-
 
 
 %keeping bins with low density but without the eventsi n those bins
@@ -93,7 +106,7 @@ CHR = unique(bins(:,1))';
 excluded = setdiff(1:23, CHR);
 disp(['Excluded chromosomes: ' num2str(excluded)])
 
-R = MarginalProbability(bins_event_tble,events00,numbins); 
+R = MarginalProbability(bins_event_tble,events00,numbins);
 
 
 % 

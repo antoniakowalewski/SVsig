@@ -49,4 +49,3 @@ end
 for ca=1:num_annot
     mfull{ca}(:,:) = mfull{ca}(:,:) + mfull{ca}(:,:)';
 end
-
