@@ -9,3 +9,5 @@ cbinom_alpha.mat
 debug_alpha.mat
 *.DS_Store
 
+bin/20240719_testmodel.mat
+data/combined.merged.blacklist_filter.dRanger_override.CGC_override.exact_filter.SV_svsig.csv
