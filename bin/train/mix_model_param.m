@@ -178,7 +178,7 @@ mix_model=mix_model/sum(mix_model(:));
  %penalty3 = (1- alpha(3)) * 0;
  %3 added terms to BIC as penalty
         % the BIC value
-    BIC = -2*(sLij + zLij)+log(nume)*num_param
+    BIC = -2*(sLij + zLij)+log(nume)*num_param;
     %BIC = -2*(sLij + zLij + xLij)+log(nume)*num_param
 
       %BIC = -2*(sLij + zLij)+penalty1 + penalty2 
