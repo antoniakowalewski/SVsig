@@ -18,12 +18,14 @@
 %   cfg = struct();
 %   cfg.work_dir = '/path/to/SVsig';
 %   cfg.sv_file = '/path/to/input.csv';
-%   cfg.output_file = '/path/to/output.tsv';
+%   cfg.output_file = '/path/to/output.txt';
 %   cfg.model_exist = false;  % set true only when cfg.model_file is provided
+%   cfg.genome_build = 'hg_19' or 'hg_38';
 %   run2DModel(cfg);
 %
 %   % CLI:
-%   % ./run2DModel -wd /path/to/SVsig -sv /path/to/input.csv -out /path/to/output.tsv
+%   % ./run2DModel -wd /path/to/SVsig -sv /path/to/input.csv -out
+%   /path/to/output.txt -genome hg_19
 %   % ./run2DModel -help
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
