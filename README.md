@@ -1,3 +1,26 @@
+## Running parameters for TCGA WGS project
+
+[run2DModel] effective parameters
+--work_dir=/Users/akowalew/SVsig-antoniakowalewski
+--sv_file=/Users/akowalew/SVsig-antoniakowalewski/data/BLCA.merged.blacklist_filter.dRanger_override.CGC_override.exact_filter.SV_svsig.csv
+--output_file=/Users/akowalew/SVsig-antoniakowalewski/BLCA.fdr0.1.bin5e5.hg38.txt
+--model_exist=false
+--model_file=NA
+--complex_model=false
+--weights=false
+--std_filter=10
+--len_filter=1e+06
+--bks_cluster=1
+--fdr_threshold=0.1
+--tier_std_cutoff=42833.6
+--num_breakpoints_per_bin=100
+--bin_length=500000
+--chr_list=1:23
+--genome_build=hg_38
+--random_seed=NA
+--save_bin_index=false
+
+
 ## *SVsig* - Recurrent structural variations detection in cancer whole genomes
 
 
