@@ -1,1 +1,0 @@
-cluster_num	sid	gene_i	all_genes_i	gene_j	all_genes_j	subtype	bin_i	chr_i	pos_i	strand_i	bin_j	chr_j	pos_j	strand_j	tile_qval	pval	prob	num_hits	stddev_i	stddev_j	tier

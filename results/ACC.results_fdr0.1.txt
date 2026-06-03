@@ -1,3 +1,0 @@
-cluster_num	sid	gene_i	all_genes_i	gene_j	all_genes_j	subtype	bin_i	chr_i	pos_i	strand_i	bin_j	chr_j	pos_j	strand_j	tile_qval	pval	prob	num_hits	stddev_i	stddev_j	tier
-1	TCGA-OR-A5KX-01A	GTF2IP1	"GTF2IP1	LOC100093631"	none	none	ACC	72	7	74613659	-	127	17	82130524	-	0.0410339994022606	0.00011	1.70888722885665e-05	2	3416.7399666934	34840.5653226236	tier 1
-1	TCGA-OR-A5LO-01A	GTF2IP1	"GTF2IP1	LOC100093631"	none	none	ACC	72	7	74608827	+	127	17	82081252	+	0.0410339994022606	0.00011	1.70888722885665e-05	2	3416.7399666934	34840.5653226236	tier 1
