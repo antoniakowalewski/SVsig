@@ -9,5 +9,5 @@ debug_alpha.mat
 .DS_Store
 
 20240719_testmodel.mat
-data/*
+data/input_data/*
 results/*
