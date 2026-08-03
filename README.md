@@ -1,4 +1,14 @@
-## Running parameters for TCGA WGS project
+## Running instructions for TCGA WGS project
+
+cfg = struct();
+cfg.work_dir = '/Users/akowalew/SVsig-antoniakowalewski';
+cfg.sv_file = '/Users/akowalew/SVsig-antoniakowalewski/data/PRAD.new.merged.filtered.SV_svsig.csv';
+cfg.output_file = '/Users/akowalew/SVsig-antoniakowalewski/results/PRAD.new.fdr0.1.bin5e5.hg38.txt';
+cfg.model_exist = false;
+cfg.genome_build = 'hg_38';
+run2DModel(cfg);
+
+## Full running parameters for TCGA WGS project
 
 [run2DModel] effective parameters
 --work_dir=/Users/akowalew/SVsig-antoniakowalewski
