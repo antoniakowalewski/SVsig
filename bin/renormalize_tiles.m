@@ -8,55 +8,97 @@ function [normalized_mat] = renormalize_tiles(mat_ratios, mat, events, bins, CHR
 
 annot_tiles=tiles_annot_copy('length',events,bins,CHR);
 
- diag_short_ratio=(sum(sum(mat_ratios(annot_tiles(:,:,1)))))/(sum(sum(mat_ratios)));
- short_ratio=(sum(sum(mat_ratios(annot_tiles(:,:,2)))))/(sum(sum(mat_ratios)));
- long_ratio=(sum(sum(mat_ratios(annot_tiles(:,:,3)))))/(sum(sum(mat_ratios)));
- inter_ratio=(sum(sum(mat_ratios(annot_tiles(:,:,4)))))/(sum(sum(mat_ratios)));
+% Verify dimensions before logical indexing
+if size(mat_ratios,1) ~= size(annot_tiles,1) || ...
+   size(mat_ratios,2) ~= size(annot_tiles,2) || ...
+   size(mat,1) ~= size(annot_tiles,1) || ...
+   size(mat,2) ~= size(annot_tiles,2)
 
-normalized_mat=zeros(size(mat,1),size(mat,2));
+    error('renormalize_tiles:SizeMismatch', ...
+        ['mat_ratios is %dx%d, mat is %dx%d, and annot_tiles is %dx%d. ' ...
+         'All must have matching dimensions.'], ...
+        size(mat_ratios,1), size(mat_ratios,2), ...
+        size(mat,1), size(mat,2), ...
+        size(annot_tiles,1), size(annot_tiles,2));
+end
 
-diag_short_annot = (sum(sum(mat(annot_tiles(:,:,1)))))/(sum(sum(mat)));
-short_annot = (sum(sum(mat(annot_tiles(:,:,2)))))/(sum(sum(mat)));
-long_annot = (sum(sum(mat(annot_tiles(:,:,3)))))/(sum(sum(mat)));
-inter_annot= (sum(sum(mat(annot_tiles(:,:,4)))))/(sum(sum(mat)));
-%sum_mat=sum(sum(mat));
+ratio_total = full(sum(mat_ratios(:)));
+mat_total = full(sum(mat(:)));
 
-%short_ratio=short_annot/(short_annot + long_annot);
-%long_ratio=short_annot/(short_annot + long_annot);
-%inter_ratio=short_annot/(short_annot + long_annot);
+if ratio_total <= 0 || ~isfinite(ratio_total)
+    error('SVsig:InsufficientObservedSignal', ...
+        ['Unable to estimate the background model because the observed event matrix ' ...
+         'has zero or non-finite total mass (%g). This typically means that too few ' ...
+         'structural variants remain after filtering to estimate the required event ' ...
+         'categories. Consider using a precomputed background model or relaxing filters.'], ...
+        ratio_total);
+end
 
-%
-%normalized_mat(annot_tiles(:,:,1)) = (short_ratio/short_annot)*mat(annot_tiles(:,:,1));
-%normalized_mat(annot_tiles(:,:,2)) = (long_ratio/long_annot)*mat(annot_tiles(:,:,2));
-%normalized_mat(annot_tiles(:,:,3)) = (inter_ratio/inter_annot)*mat(annot_tiles(:,:,3));
+if mat_total <= 0 || ~isfinite(mat_total)
+    error('SVsig:InsufficientModelSignal', ...
+        ['Unable to estimate the background model because the expected probability ' ...
+         'matrix has zero or non-finite total mass (%g). This usually indicates that ' ...
+         'one or more event categories cannot be estimated from the remaining cohort data. ' ...
+         'Consider using a precomputed background model or relaxing filters.'], ...
+        mat_total);
+end
 
-%mat(firstbin:lastbin,1:firstbin-1) = ((1 - intra_ratio)/ratio)*p_mult(firstbin:lastbin, 1:firstbin-1);
+% Desired ratios from observed events
+diag_short_ratio = full(sum(mat_ratios(annot_tiles(:,:,1)))) / ratio_total;
+short_ratio      = full(sum(mat_ratios(annot_tiles(:,:,2)))) / ratio_total;
+long_ratio       = full(sum(mat_ratios(annot_tiles(:,:,3)))) / ratio_total;
+inter_ratio      = full(sum(mat_ratios(annot_tiles(:,:,4)))) / ratio_total;
 
-%new_short = (sum(sum(normalized_mat(annot_tiles(:,:,1)))))/(sum(sum(normalized_mat)));
-%new_long = (sum(sum(normalized_mat(annot_tiles(:,:,2)))))/(sum(sum(normalized_mat)));
-%new_inter = (sum(sum(normalized_mat(annot_tiles(:,:,3)))))/(sum(sum(normalized_mat)));
+% Current ratios in model
+diag_short_annot = full(sum(mat(annot_tiles(:,:,1)))) / mat_total;
+short_annot      = full(sum(mat(annot_tiles(:,:,2)))) / mat_total;
+long_annot       = full(sum(mat(annot_tiles(:,:,3)))) / mat_total;
+inter_annot      = full(sum(mat(annot_tiles(:,:,4)))) / mat_total;
 
-%disp(['old short, long, inter ratios = ' num2str(short_annot) ' , ' num2str(long_annot) ' , ' num2str(inter_annot)]);
+desired_ratios = [diag_short_ratio, short_ratio, long_ratio, inter_ratio];
+current_ratios = [diag_short_annot, short_annot, long_annot, inter_annot];
 
-%disp(['new short, long, inter ratios = ' num2str(new_short) ' , ' num2str(new_long) ' , ' num2str(new_inter)]);
+normalized_mat = zeros(size(mat));
 
-normalized_mat(annot_tiles(:,:,1)) = (diag_short_ratio/diag_short_annot)*mat(annot_tiles(:,:,1));
-normalized_mat(annot_tiles(:,:,2)) = (short_ratio/short_annot)*mat(annot_tiles(:,:,2));
-normalized_mat(annot_tiles(:,:,3)) = (long_ratio/long_annot)*mat(annot_tiles(:,:,3));
-normalized_mat(annot_tiles(:,:,4)) = (inter_ratio/inter_annot)*mat(annot_tiles(:,:,4));
+for a = 1:4
+    mask = annot_tiles(:,:,a);
 
-new_diag_short = (sum(sum(normalized_mat(annot_tiles(:,:,1)))))/(sum(sum(normalized_mat)));
-new_short = (sum(sum(normalized_mat(annot_tiles(:,:,2)))))/(sum(sum(normalized_mat)));
-new_long = (sum(sum(normalized_mat(annot_tiles(:,:,3)))))/(sum(sum(normalized_mat)));
-new_inter = (sum(sum(normalized_mat(annot_tiles(:,:,4)))))/(sum(sum(normalized_mat)));
+    if desired_ratios(a) == 0
+        % No observed events in this category, so assign zero mass.
+        normalized_mat(mask) = 0;
 
+    elseif current_ratios(a) > 0 && isfinite(current_ratios(a))
+        normalized_mat(mask) = ...
+            (desired_ratios(a) / current_ratios(a)) .* mat(mask);
 
-disp(['old short, long, inter ratios = ' num2str(diag_short_annot) ', ' num2str(short_annot) ' , ' num2str(long_annot) ' , ' num2str(inter_annot)]);
+    else
+        % Observed events exist, but model assigns no mass to this category.
+        error('renormalize_tiles:UnsupportedCategory', ...
+            ['Category %d has desired ratio %g, but the model ratio is %g. ' ...
+             'The model cannot represent observed events in this category.'], ...
+            a, desired_ratios(a), current_ratios(a));
+    end
+end
 
-disp(['new short, long, inter ratios = ' num2str(new_diag_short) ', ' num2str(new_short) ' , ' num2str(new_long), ' , ' num2str(new_inter)]);
+normalized_total = sum(normalized_mat(:));
 
+if normalized_total <= 0 || ~isfinite(normalized_total)
+    error('renormalize_tiles:InvalidNormalizedTotal', ...
+        'Normalized matrix has invalid total mass: %g.', normalized_total);
+end
 
+new_diag_short = sum(normalized_mat(annot_tiles(:,:,1))) / normalized_total;
+new_short      = sum(normalized_mat(annot_tiles(:,:,2))) / normalized_total;
+new_long       = sum(normalized_mat(annot_tiles(:,:,3))) / normalized_total;
+new_inter      = sum(normalized_mat(annot_tiles(:,:,4))) / normalized_total;
 
+fprintf('target diag-short, short, long, inter ratios = %g, %g, %g, %g\n', ...
+    diag_short_ratio, short_ratio, long_ratio, inter_ratio);
 
+fprintf('old diag-short, short, long, inter ratios = %g, %g, %g, %g\n', ...
+    diag_short_annot, short_annot, long_annot, inter_annot);
 
+fprintf('new diag-short, short, long, inter ratios = %g, %g, %g, %g\n', ...
+    new_diag_short, new_short, new_long, new_inter);
 
+end
