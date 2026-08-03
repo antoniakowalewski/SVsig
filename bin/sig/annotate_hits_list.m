@@ -41,7 +41,6 @@ end
 if isempty(TbyGene_Table(c1).gene_j),
   TbyGene_Table(c1).gene_j = {'none'};
 end
-
             chits.gene_i = repmat(TbyGene_Table(c1).gene_i(1),height(chits),1);
             chits.gene_j = repmat(TbyGene_Table(c1).gene_j(1),height(chits),1);
             chits.nearby_genes_i = repmat({TbyGene_Table(c1).gene_i},height(chits),1);
