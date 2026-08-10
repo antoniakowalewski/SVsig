@@ -2,7 +2,7 @@
 
 1. Run data/datasets_to_proper_format_SVsig.ipynb  
 
-2. In MATLAB R2024B:
+2. In MATLAB R2024B:  
 cfg = struct();  
 cfg.work_dir = '/Users/akowalew/SVsig-antoniakowalewski';  
 cfg.sv_file = '/Users/akowalew/SVsig-antoniakowalewski/data/input_data/{cohort}.new.merged.filtered.SV_svsig.csv';  
