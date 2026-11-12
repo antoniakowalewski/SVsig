@@ -53,7 +53,7 @@ run_one() {
   local c="$1" sv="$IN_DIR/$1.new.merged.filtered.SV_svsig.csv" out="$OUT_DIR/$1.$TAG.txt"
   [[ -f "$sv" ]] || { echo "[$c] MISSING input $sv"; return 3; }
   if [[ -s "$out" && $FORCE -eq 0 ]]; then echo "[$c] skip (output exists)"; return 0; fi
-  local cmd="run2DModel('-wd','$REPO','-sv','$sv','-out','$out','-genome','$GENOME','-bin','$BIN','-fdr','$FDR','-complex','false','-model_exist','false')"
+  local cmd="addpath('$REPO/bin'); run2DModel('-wd','$REPO','-sv','$sv','-out','$out','-genome','$GENOME','-bin','$BIN','-fdr','$FDR','-complex','false','-model_exist','false')"
   if (( DRY )); then echo "[$c] $MATLAB -batch \"$cmd\""; return 0; fi
   echo "[$c] start $(date +%T)"
   if "$MATLAB" -batch "$cmd" >"$LOG_DIR/$c.log" 2>&1; then echo "[$c] done  $(date +%T)"
