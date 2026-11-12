@@ -10,4 +10,4 @@ debug_alpha.mat
 
 20240719_testmodel.mat
 data/input_data/*
-results/*
+results/*.jupyter-agent-bridge/
