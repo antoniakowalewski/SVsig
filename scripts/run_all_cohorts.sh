@@ -41,7 +41,8 @@ if (( ! SKIP_CONVERT )); then
 fi
 
 if (( $# )); then COHORTS=("$@"); else
-  mapfile -t COHORTS < <(cd "$IN_DIR" 2>/dev/null && ls *.new.merged.filtered.SV_svsig.csv 2>/dev/null | sed 's/\.new\.merged.*//' | sort)
+  COHORTS=()   # (no mapfile: macOS ships bash 3.2)
+  while IFS= read -r line; do [[ -n "$line" ]] && COHORTS+=("$line"); done < <(cd "$IN_DIR" 2>/dev/null && ls *.new.merged.filtered.SV_svsig.csv 2>/dev/null | sed 's/\.new\.merged.*//' | sort)
 fi
 (( ${#COHORTS[@]} )) || { echo "No cohorts found in $IN_DIR" >&2; exit 1; }
 (( DRY )) || command -v "$MATLAB" >/dev/null || { echo "MATLAB not found ('$MATLAB'); use -m /path/to/matlab" >&2; exit 1; }
