@@ -24,7 +24,7 @@ ct=1;
 ct_last=1;
 %this OBNOXIOUS line is the thing that kept printing the 2 
 %figure out later if this 2 even has any purpose 
-for c1=1:length(pval_tophits),2;
+for c1=1:size(pval_tophits,1),2;
     numhits=mfull0(pval_tophits(c1,2));
     event_loc=find(bin_event_matrix(:,3)==pval_tophits(c1,2));
     if numhits~=length(event_loc)

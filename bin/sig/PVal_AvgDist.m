@@ -165,8 +165,8 @@ tophits = sortrows([pval(hits_idx,:) qFDR(hits_idx)],1);
 
 %remove hits that are pushed out by 
 max_th=max(tophits(:,1));
-hits_to_remove=zeros(length(tophits),1);
-for c1=1:length(tophits)
+hits_to_remove=zeros(size(tophits,1),1);
+for c1=1:size(tophits,1)
     if p_high_b(c1)==1 && combined_pval(p_high_loc(c1),1)>max_th
         hits_to_remove(c1)=1;
     end
