@@ -1,0 +1,5 @@
+cluster_num	sid	gene_i	all_genes_i	gene_j	all_genes_j	subtype	bin_i	chr_i	pos_i	strand_i	bin_j	chr_j	pos_j	strand_j	tile_qval	pval	prob	class	num_hits	stddev_i	stddev_j	tier
+1	TCGA-3A-A9IH-01A	none	none	(FRG1DP)	(FRG1DP)	PAAD	31	13	16177423	+	56	20	29242616	+	0	0	2.08681605230107e-06	inter_chr	4	32282.5456555086	66.8406064205485	tier 1
+1	TCGA-F2-A44H-01A	none	none	(FRG1DP)	(FRG1DP)	PAAD	31	13	16121494	+	56	20	29242588	+	0	0	2.08681605230107e-06	inter_chr	4	32282.5456555086	66.8406064205485	tier 1
+1	TCGA-IB-A7LX-01A	none	none	(FRG1DP)	(FRG1DP)	PAAD	31	13	16121537	+	56	20	29242704	+	0	0	2.08681605230107e-06	inter_chr	4	32282.5456555086	66.8406064205485	tier 1
+1	TCGA-XN-A8T5-01A	none	none	(FRG1DP)	(FRG1DP)	PAAD	31	13	16177438	+	56	20	29242546	+	0	0	2.08681605230107e-06	inter_chr	4	32282.5456555086	66.8406064205485	tier 1
