@@ -1,6 +1,6 @@
 ## Running instructions for TCGA WGS project
 
-1. Run data/datasets_to_proper_format_SVsig.ipynb  
+1. Run data/datasets_to_proper_format_SVsig.py (or just run scripts/run_all_cohorts.sh, which does this step)  
 
 2. In MATLAB R2024B:  
 cfg = struct();  
