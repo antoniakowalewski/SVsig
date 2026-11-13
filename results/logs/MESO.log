@@ -1,0 +1,191 @@
+
+[run2DModel] effective parameters
+--work_dir=/Users/akowalew/SVsig-antoniakowalewski
+--sv_file=/Users/akowalew/SVsig-antoniakowalewski/data/input_data/MESO.new.merged.filtered.SV_svsig.csv
+--output_file=/Users/akowalew/SVsig-antoniakowalewski/results/MESO.new.fdr0.1.bin5e5.hg38.txt
+--model_exist=false
+--model_file=NA
+--complex_model=false
+--weights=false
+--std_filter=10
+--len_filter=1e+06
+--bks_cluster=1
+--fdr_threshold=0.1
+--tier_std_cutoff=42833.6
+--num_breakpoints_per_bin=100
+--bin_length=500000
+--chr_list=1:23
+--genome_build=hg_38
+--random_seed=NA
+--save_bin_index=false
+
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 3)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 5)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 6)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 10)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+generating events array...
+masked 31 events
+masked 6 events
+setting bins boundaries...
+removed 7926 events in 6024bins
+building event matrix...
+removing events from more than one sample per bin...
+...removed 195 events
+removing bins with zero variance...
+...removed 0 events
+Excluded chromosomes: 1   2   7  11  13  14  15  17  18  19  20  21
+calculating marginal probabilities...
+calculating conditional probabilities...
+target diag-short, short, long, inter ratios = 0.5, 0.222222, 0.222222, 0.0555556
+old diag-short, short, long, inter ratios = 1.76471e-07, 1.65562e-13, 3.69721e-15, 1
+new diag-short, short, long, inter ratios = 0.5, 0.222222, 0.222222, 0.0555556
+target diag-short, short, long, inter ratios = 0.775281, 0.179775, 0.0224719, 0.0224719
+old diag-short, short, long, inter ratios = 1.76471e-07, 3.75196e-13, 2.64086e-15, 1
+new diag-short, short, long, inter ratios = 0.775281, 0.179775, 0.0224719, 0.0224719
+target diag-short, short, long, inter ratios = 0.882353, 0, 0.117647, 0
+old diag-short, short, long, inter ratios = 1.76471e-07, 1.08935e-13, 1.05634e-15, 1
+new diag-short, short, long, inter ratios = 0.882353, 0, 0.117647, 0
+target diag-short, short, long, inter ratios = 0.769231, 0.0769231, 0.153846, 0
+old diag-short, short, long, inter ratios = 1.76471e-07, 1.6529e-13, 1.05634e-15, 1
+new diag-short, short, long, inter ratios = 0.769231, 0.0769231, 0.153846, 0
+target diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+old diag-short, short, long, inter ratios = 0.808187, 0.100262, 0.0667203, 0.0248309
+new diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+Converged on 9 of 100
+num of negatives in qsolve=2 min qsolve -0.0059909
+
+ans =
+
+   6.1773e-04
+
+stats on q
+-----------------
+sum(qsolve) = 0.93926
+min qsolve = -0.0059909
+max qsolve = 0.22161
+mean qsolve = 0.036126
+sum(projected-onto-simplex qe) = 1
+min qe = 0
+max qe = 0.2238
+mean qe = 0.038462
+max diff abs(qe-qsolve) = 0.0059909
+final sol: qsum = 1
+stats on pij
+-----------------
+sum(pij) = 2.122
+sum(normalized pij) = 2
+min p = 0
+max p = 0.23626
+mean p = 0.0029586
+target diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+old diag-short, short, long, inter ratios = 0.628734, 0.294596, 0.0591055, 0.0175649
+new diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+
+nume =
+
+   137
+
+target diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+old diag-short, short, long, inter ratios = 0.944629, 0.00158906, 1.6625e-05, 0.0537648
+new diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+target diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+old diag-short, short, long, inter ratios = 0.865808, 0.0412887, 0.0637147, 0.0291886
+new diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+target diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+old diag-short, short, long, inter ratios = 0.414663, 0.515599, 0.0564061, 0.0133314
+new diag-short, short, long, inter ratios = 0.751825, 0.153285, 0.0729927, 0.0218978
+calculating poisson log likelihood approximation
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+optimal alpha0.029045
+optimal alpha 0.83487
+optimal alpha 0.23662
+optimal alpha 0.96951
+
+approx_flag =
+
+     1
+
+calculating p-val for 309 tiles with zero events
+hi
+Elapsed time is 0.056021 seconds.
+calculating p-val for 23 tiles with 1 event
+Elapsed time is 0.007822 seconds.
+calculating support for 19 tiles with >1 events
+Elapsed time is 0.289497 seconds.
+calculating p-val for 19 tiles with >1 events
+Elapsed time is 0.039268 seconds.
+generating numeric hits table...
+
+warning: if this takes a long time, try changing the FDR threshold or the length of your bins.
+This function loops through every gene in the significant bin. 
+NOTE TO SELF to check this function 
+done with HitsTableCV
+
+ans =
+
+     0
+
+
+ans =
+
+    72
+
+{Error using annotate_hits_list (line 9)
+No significant genomic interactions were identified for annotation. This
+typically means that no bin pairs passed the significance threshold after
+filtering. This may occur when the cohort contains too few structural variants,
+filtering is overly stringent, or there are no recurrent breakpoint clusters.
+Consider relaxing the significance threshold or filtering criteria, increasing
+the cohort size, or verifying that the input SV calls are valid.
+
+Error in runSVsig (line 98)
+annotated_table = annotate_hits_list( TbyGene_mix_lf,SVTable,bins,hitstable_mix_lookup,pa_mix,qFDR_mix );
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run2DModel (line 134)
+    [hits_table, bins] = runSVsig(sv_file, model_exist, complex_model, weights, len_filter, bks_cluster, ...
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

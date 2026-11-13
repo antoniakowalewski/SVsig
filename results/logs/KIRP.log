@@ -1,0 +1,133 @@
+
+[run2DModel] effective parameters
+--work_dir=/Users/akowalew/SVsig-antoniakowalewski
+--sv_file=/Users/akowalew/SVsig-antoniakowalewski/data/input_data/KIRP.new.merged.filtered.SV_svsig.csv
+--output_file=/Users/akowalew/SVsig-antoniakowalewski/results/KIRP.new.fdr0.1.bin5e5.hg38.txt
+--model_exist=false
+--model_file=NA
+--complex_model=false
+--weights=false
+--std_filter=10
+--len_filter=1e+06
+--bks_cluster=1
+--fdr_threshold=0.1
+--tier_std_cutoff=42833.6
+--num_breakpoints_per_bin=100
+--bin_length=500000
+--chr_list=1:23
+--genome_build=hg_38
+--random_seed=NA
+--save_bin_index=false
+
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 3)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 5)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 6)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 10)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+generating events array...
+masked 14 events
+masked 1 events
+setting bins boundaries...
+removed 4190 events in 6049bins
+building event matrix...
+removing events from more than one sample per bin...
+...removed 2 events
+removing bins with zero variance...
+...removed 0 events
+Excluded chromosomes: 1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  21  22  23
+calculating marginal probabilities...
+calculating conditional probabilities...
+target diag-short, short, long, inter ratios = 1, 0, 0, 0
+old diag-short, short, long, inter ratios = 1, 0, 0, 0
+new diag-short, short, long, inter ratios = 1, 0, 0, 0
+target diag-short, short, long, inter ratios = 1, 0, 0, 0
+old diag-short, short, long, inter ratios = 1, 0, 0, 0
+new diag-short, short, long, inter ratios = 1, 0, 0, 0
+target diag-short, short, long, inter ratios = 1, 0, 0, 0
+old diag-short, short, long, inter ratios = 1, 0, 0, 0
+new diag-short, short, long, inter ratios = 1, 0, 0, 0
+target diag-short, short, long, inter ratios = 1, 0, 0, 0
+old diag-short, short, long, inter ratios = 1, 0, 0, 0
+new diag-short, short, long, inter ratios = 1, 0, 0, 0
+target diag-short, short, long, inter ratios = 1, 0, 0, 0
+old diag-short, short, long, inter ratios = 1, 0, 0, 0
+new diag-short, short, long, inter ratios = 1, 0, 0, 0
+Converged on 1 of 100
+num of negatives in qsolve=0 min qsolve 1
+
+ans =
+
+     0
+
+stats on q
+-----------------
+sum(qsolve) = 1
+min qsolve = 1
+max qsolve = 1
+mean qsolve = 1
+sum(projected-onto-simplex qe) = 1
+min qe = 1
+max qe = 1
+mean qe = 1
+max diff abs(qe-qsolve) = 0
+final sol: qsum = 1
+stats on pij
+-----------------
+sum(pij) = 2
+sum(normalized pij) = 2
+min p = 2
+max p = 2
+mean p = 2
+target diag-short, short, long, inter ratios = 1, 0, 0, 0
+old diag-short, short, long, inter ratios = 1, 0, 0, 0
+new diag-short, short, long, inter ratios = 1, 0, 0, 0
+
+nume =
+
+    11
+
+{Error using renormalize_tiles (line 38)
+Unable to estimate the background model because the expected probability matrix
+has zero or non-finite total mass (NaN). This usually indicates that one or
+more event categories cannot be estimated from the remaining cohort data.
+Consider using a precomputed background model or relaxing filters.
+
+Error in Lijoptim_to_length (line 98)
+[sij]=renormalize_tiles(mfull, sij, events, bins, CHR);
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in double_break_join_model (line 10)
+[sij1dy_l,opt1dy0_l,fval0_l,lij,intra_chr_l] = Lijoptim_to_length(events00,chsize,bins,CHR,R,mfull{1}+mfull{2}+mfull{3}+mfull{4},sij1dx);
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in mixmodel (line 12)
+double_break_join_model
+^^^^^^^^^^^^^^^^^^^^^^^
+Error in runSVsig (line 37)
+    mixmodel;
+    ^^^^^^^^
+Error in run2DModel (line 134)
+    [hits_table, bins] = runSVsig(sv_file, model_exist, complex_model, weights, len_filter, bks_cluster, ...
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

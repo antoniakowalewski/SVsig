@@ -1,0 +1,191 @@
+
+[run2DModel] effective parameters
+--work_dir=/Users/akowalew/SVsig-antoniakowalewski
+--sv_file=/Users/akowalew/SVsig-antoniakowalewski/data/input_data/CESC.new.merged.filtered.SV_svsig.csv
+--output_file=/Users/akowalew/SVsig-antoniakowalewski/results/CESC.new.fdr0.1.bin5e5.hg38.txt
+--model_exist=false
+--model_file=NA
+--complex_model=false
+--weights=false
+--std_filter=10
+--len_filter=1e+06
+--bks_cluster=1
+--fdr_threshold=0.1
+--tier_std_cutoff=42833.6
+--num_breakpoints_per_bin=100
+--bin_length=500000
+--chr_list=1:23
+--genome_build=hg_38
+--random_seed=NA
+--save_bin_index=false
+
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 3)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 5)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 6)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 10)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+generating events array...
+masked 99 events
+masked 171 events
+setting bins boundaries...
+removed 22670 events in 5855bins
+building event matrix...
+removing events from more than one sample per bin...
+...removed 1289 events
+removing bins with zero variance...
+...removed 0 events
+Excluded chromosomes: 
+calculating marginal probabilities...
+calculating conditional probabilities...
+target diag-short, short, long, inter ratios = 0.757009, 0.0700935, 0.11215, 0.0607477
+old diag-short, short, long, inter ratios = 2.20533e-08, 5.53515e-14, 1.21717e-14, 1
+new diag-short, short, long, inter ratios = 0.757009, 0.0700935, 0.11215, 0.0607477
+target diag-short, short, long, inter ratios = 0.824339, 0.140741, 0.0275132, 0.00740741
+old diag-short, short, long, inter ratios = 2.20533e-08, 8.2295e-13, 2.76629e-14, 1
+new diag-short, short, long, inter ratios = 0.824339, 0.140741, 0.0275132, 0.00740741
+target diag-short, short, long, inter ratios = 0.779193, 0.11465, 0.0828025, 0.0233546
+old diag-short, short, long, inter ratios = 2.20533e-08, 4.60992e-13, 2.21303e-14, 1
+new diag-short, short, long, inter ratios = 0.779193, 0.11465, 0.0828025, 0.0233546
+target diag-short, short, long, inter ratios = 0.776371, 0.0632911, 0.122363, 0.0379747
+old diag-short, short, long, inter ratios = 2.20533e-08, 1.10929e-13, 1.32782e-14, 1
+new diag-short, short, long, inter ratios = 0.776371, 0.0632911, 0.122363, 0.0379747
+target diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+old diag-short, short, long, inter ratios = 0.817639, 0.100439, 0.0599763, 0.0219462
+new diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+Converged on 7 of 100
+num of negatives in qsolve=0 min qsolve 0.00038741
+
+ans =
+
+   6.7275e-04
+
+stats on q
+-----------------
+sum(qsolve) = 0.9924
+min qsolve = 0.00038741
+max qsolve = 0.0432
+mean qsolve = 0.0050892
+sum(projected-onto-simplex qe) = 1
+min qe = 0.0004264
+max qe = 0.043239
+mean qe = 0.0051282
+max diff abs(qe-qsolve) = 3.899e-05
+final sol: qsum = 1
+stats on pij
+-----------------
+sum(pij) = 2.0147
+sum(normalized pij) = 2
+min p = 5.493e-10
+max p = 0.063396
+mean p = 5.2597e-05
+target diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+old diag-short, short, long, inter ratios = 0.756038, 0.163526, 0.0599938, 0.0204424
+new diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+
+nume =
+
+        1867
+
+target diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+old diag-short, short, long, inter ratios = 0.959732, 0.000701983, 3.64573e-05, 0.03953
+new diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+target diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+old diag-short, short, long, inter ratios = 0.850504, 0.0674612, 0.0572477, 0.0247874
+new diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+target diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+old diag-short, short, long, inter ratios = 0.705139, 0.217304, 0.0595802, 0.0179763
+new diag-short, short, long, inter ratios = 0.799143, 0.116229, 0.063203, 0.0214247
+calculating poisson log likelihood approximation
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+optimal alpha0.44581
+optimal alpha0.88515
+optimal alpha0.50996
+optimal alpha0.92452
+
+approx_flag =
+
+     1
+
+calculating p-val for 18728 tiles with zero events
+hi
+Elapsed time is 0.125321 seconds.
+calculating p-val for 143 tiles with 1 event
+Elapsed time is 0.002038 seconds.
+calculating support for 239 tiles with >1 events
+Elapsed time is 1.742517 seconds.
+calculating p-val for 239 tiles with >1 events
+Elapsed time is 0.116410 seconds.
+generating numeric hits table...
+
+warning: if this takes a long time, try changing the FDR threshold or the length of your bins.
+This function loops through every gene in the significant bin. 
+NOTE TO SELF to check this function 
+done with HitsTableCV
+
+ans =
+
+     0
+
+
+ans =
+
+   828
+
+the number of hits pre-filtration is ...1
+the number of hits post-filtration is ...1
+
+ans =
+
+  4x23 table
+
+    cluster_num            sid               gene_i      all_genes_i     gene_j      all_genes_j    subtype     bin_i    chr_i      pos_i       strand_i    bin_j    chr_j      pos_j       strand_j    tile_qval     pval         prob          class       num_hits    stddev_i     stddev_j        tier   
+    ___________    ____________________    __________    ___________    _________    ___________    ________    _____    _____    __________    ________    _____    _____    __________    ________    _________    _______    __________    ___________    ________    ________    __________    __________
+
+         1         {'TCGA-EA-A5ZE-01A'}    {'FSTL3*'}    {1x8 cell}     {'REXO1'}    {1x6 cell}     {'CESC'}     145      19      5.9709e+05     {'+'}       147      19         1.7e+06     {'-'}      0.036812     0.00011    4.6097e-05    "deletion"        3         72483      1.0426e+05    {'tier 3'}
+         1         {'TCGA-FU-A3NI-01A'}    {'FSTL3*'}    {1x8 cell}     {'REXO1'}    {1x6 cell}     {'CESC'}     145      19      6.6208e+05     {'-'}       147      19      1.8488e+06     {'-'}      0.036812     0.00011    4.6097e-05    "inversion"       3         72483      1.0426e+05    {'tier 3'}
+         1         {'TCGA-FU-A3NI-01A'}    {'FSTL3*'}    {1x8 cell}     {'REXO1'}    {1x6 cell}     {'CESC'}     145      19      6.6242e+05     {'+'}       147      19      1.5964e+06     {'-'}      0.036812     0.00011    4.6097e-05    "deletion"        3         72483      1.0426e+05    {'tier 3'}
+         1         {'TCGA-VS-A8QA-01A'}    {'FSTL3*'}    {1x8 cell}     {'REXO1'}    {1x6 cell}     {'CESC'}     145      19      7.7184e+05     {'+'}       147      19       1.691e+06     {'-'}      0.036812     0.00011    4.6097e-05    "deletion"        3         72483      1.0426e+05    {'tier 3'}
+

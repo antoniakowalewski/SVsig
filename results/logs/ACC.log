@@ -1,0 +1,192 @@
+
+[run2DModel] effective parameters
+--work_dir=/Users/akowalew/SVsig-antoniakowalewski
+--sv_file=/Users/akowalew/SVsig-antoniakowalewski/data/input_data/ACC.new.merged.filtered.SV_svsig.csv
+--output_file=/Users/akowalew/SVsig-antoniakowalewski/results/ACC.new.fdr0.1.bin5e5.hg38.txt
+--model_exist=false
+--model_file=NA
+--complex_model=false
+--weights=false
+--std_filter=10
+--len_filter=1e+06
+--bks_cluster=1
+--fdr_threshold=0.1
+--tier_std_cutoff=42833.6
+--num_breakpoints_per_bin=100
+--bin_length=500000
+--chr_list=1:23
+--genome_build=hg_38
+--random_seed=NA
+--save_bin_index=false
+
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 3)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 5)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 6)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 10)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+generating events array...
+masked 39 events
+masked 3 events
+setting bins boundaries...
+removed 12223 events in 5892bins
+building event matrix...
+removing events from more than one sample per bin...
+...removed 697 events
+removing bins with zero variance...
+...removed 0 events
+Excluded chromosomes: 13  18
+calculating marginal probabilities...
+calculating conditional probabilities...
+target diag-short, short, long, inter ratios = 0.31068, 0.038835, 0.417476, 0.23301
+old diag-short, short, long, inter ratios = 2.78771e-08, 3.65928e-14, 3.40478e-14, 1
+new diag-short, short, long, inter ratios = 0.31068, 0.038835, 0.417476, 0.23301
+target diag-short, short, long, inter ratios = 0.526882, 0.182796, 0.189964, 0.100358
+old diag-short, short, long, inter ratios = 2.78771e-08, 2.99763e-13, 4.80979e-14, 1
+new diag-short, short, long, inter ratios = 0.526882, 0.182796, 0.189964, 0.100358
+target diag-short, short, long, inter ratios = 0.755769, 0.0615385, 0.111538, 0.0711538
+old diag-short, short, long, inter ratios = 2.78771e-08, 2.38418e-13, 5.0287e-14, 1
+new diag-short, short, long, inter ratios = 0.755769, 0.0615385, 0.111538, 0.0711538
+target diag-short, short, long, inter ratios = 0.368794, 0.0425532, 0.326241, 0.262411
+old diag-short, short, long, inter ratios = 2.78771e-08, 6.90972e-14, 3.9384e-14, 1
+new diag-short, short, long, inter ratios = 0.368794, 0.0425532, 0.326241, 0.262411
+target diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+old diag-short, short, long, inter ratios = 0.630666, 0.0699273, 0.167343, 0.132064
+new diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+Converged on 7 of 100
+num of negatives in qsolve=1 min qsolve -0.000219
+
+ans =
+
+    0.0012
+
+stats on q
+-----------------
+sum(qsolve) = 0.99317
+min qsolve = -0.000219
+max qsolve = 0.0383
+mean qsolve = 0.0062859
+sum(projected-onto-simplex qe) = 1
+min qe = 0
+max qe = 0.038342
+mean qe = 0.0063291
+max diff abs(qe-qsolve) = 0.000219
+final sol: qsum = 1
+stats on pij
+-----------------
+sum(pij) = 2.0155
+sum(normalized pij) = 2
+min p = 0
+max p = 0.034098
+mean p = 8.0115e-05
+target diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+old diag-short, short, long, inter ratios = 0.57474, 0.117947, 0.190426, 0.116887
+new diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+
+nume =
+
+        1043
+
+target diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+old diag-short, short, long, inter ratios = 0.837402, 0.0012343, 0.0003291, 0.161035
+new diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+target diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+old diag-short, short, long, inter ratios = 0.662519, 0.0541446, 0.150628, 0.132709
+new diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+target diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+old diag-short, short, long, inter ratios = 0.545053, 0.152908, 0.195968, 0.106071
+new diag-short, short, long, inter ratios = 0.598274, 0.0891659, 0.191755, 0.120805
+calculating poisson log likelihood approximation
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+optimal alpha 0.4911
+optimal alpha0.29558
+optimal alpha0.65739
+optimal alpha0.83963
+
+approx_flag =
+
+     1
+
+calculating p-val for 12077 tiles with zero events
+hi
+Elapsed time is 0.127909 seconds.
+calculating p-val for 342 tiles with 1 event
+Elapsed time is 0.001581 seconds.
+calculating support for 142 tiles with >1 events
+Elapsed time is 1.586834 seconds.
+calculating p-val for 142 tiles with >1 events
+Elapsed time is 0.062454 seconds.
+generating numeric hits table...
+
+warning: if this takes a long time, try changing the FDR threshold or the length of your bins.
+This function loops through every gene in the significant bin. 
+NOTE TO SELF to check this function 
+done with HitsTableCV
+
+ans =
+
+     0
+
+
+ans =
+
+   285
+
+the number of hits pre-filtration is ...2
+the number of hits post-filtration is ...2
+
+ans =
+
+  5x23 table
+
+    cluster_num            sid                 gene_i        all_genes_i      gene_j      all_genes_j    subtype    bin_i    chr_i      pos_i       strand_i    bin_j    chr_j      pos_j       strand_j    tile_qval     pval         prob          class       num_hits    stddev_i    stddev_j       tier   
+    ___________    ____________________    ______________    ___________    __________    ___________    _______    _____    _____    __________    ________    _____    _____    __________    ________    _________    _______    __________    ___________    ________    ________    ________    __________
+
+         1         {'TCGA-OR-A5JM-01A'}    {'FLYWCH1'   }    {1x4 cell}     {'PMM1'  }    {1x4 cell}     {'ACC'}     118      16      2.9599e+06     {'-'}       156      22      4.1553e+07     {'+'}      0.019868     4.7e-05    8.1196e-06    "inter_chr"       2          42312      19334      {'tier 1'}
+         1         {'TCGA-OR-A5JM-01A'}    {'FLYWCH1'   }    {1x4 cell}     {'PMM1'  }    {1x4 cell}     {'ACC'}     118      16      2.9606e+06     {'+'}       156      22      4.1549e+07     {'-'}      0.019868     4.7e-05    8.1196e-06    "inter_chr"       2          42312      19334      {'tier 1'}
+         1         {'TCGA-OR-A5LI-01A'}    {'FLYWCH1'   }    {1x4 cell}     {'PMM1'  }    {1x4 cell}     {'ACC'}     118      16      2.8869e+06     {'-'}       156      22      4.1584e+07     {'+'}      0.019868     4.7e-05    8.1196e-06    "inter_chr"       2          42312      19334      {'tier 1'}
+         2         {'TCGA-OR-A5KX-01A'}    {'(GTF2IRD1)'}    {1x1 cell}     {'CCDC57'}    {1x3 cell}     {'ACC'}      72       7      7.4614e+07     {'-'}       131      17      8.2131e+07     {'-'}      0.039026      0.0001    1.6031e-05    "inter_chr"       2         3416.7      34841      {'tier 1'}
+         2         {'TCGA-OR-A5LO-01A'}    {'(GTF2IRD1)'}    {1x1 cell}     {'CCDC57'}    {1x3 cell}     {'ACC'}      72       7      7.4609e+07     {'+'}       131      17      8.2081e+07     {'+'}      0.039026      0.0001    1.6031e-05    "inter_chr"       2         3416.7      34841      {'tier 1'}
+

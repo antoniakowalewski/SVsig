@@ -1,0 +1,225 @@
+
+[run2DModel] effective parameters
+--work_dir=/Users/akowalew/SVsig-antoniakowalewski
+--sv_file=/Users/akowalew/SVsig-antoniakowalewski/data/input_data/THCA.new.merged.filtered.SV_svsig.csv
+--output_file=/Users/akowalew/SVsig-antoniakowalewski/results/THCA.new.fdr0.1.bin5e5.hg38.txt
+--model_exist=false
+--model_file=NA
+--complex_model=false
+--weights=false
+--std_filter=10
+--len_filter=1e+06
+--bks_cluster=1
+--fdr_threshold=0.1
+--tier_std_cutoff=42833.6
+--num_breakpoints_per_bin=100
+--bin_length=500000
+--chr_list=1:23
+--genome_build=hg_38
+--random_seed=NA
+--save_bin_index=false
+
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 3)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 5)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 6)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 10)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+generating events array...
+masked 13 events
+masked 1 events
+setting bins boundaries...
+removed 2874 events in 6043bins
+building event matrix...
+removing events from more than one sample per bin...
+...removed 28 events
+removing bins with zero variance...
+...removed 0 events
+Excluded chromosomes: 3   4   5   6   9  11  12  13  14  15  16  17  18  19  21  22  23
+calculating marginal probabilities...
+calculating conditional probabilities...
+target diag-short, short, long, inter ratios = 0.0769231, 0, 0.923077, 0
+old diag-short, short, long, inter ratios = 6.98282e-07, 0, 2.96393e-13, 0.999999
+new diag-short, short, long, inter ratios = 0.0769231, 0, 0.923077, 0
+target diag-short, short, long, inter ratios = 0.947368, 0, 0.0526316, 0
+old diag-short, short, long, inter ratios = 6.98282e-07, 0, 3.11746e-13, 0.999999
+new diag-short, short, long, inter ratios = 0.947368, 0, 0.0526316, 0
+target diag-short, short, long, inter ratios = 1, 0, 0, 0
+old diag-short, short, long, inter ratios = 6.98282e-07, 0, 6.98687e-20, 0.999999
+new diag-short, short, long, inter ratios = 1, 0, 0, 0
+target diag-short, short, long, inter ratios = 0.111111, 0, 0.888889, 0
+old diag-short, short, long, inter ratios = 6.98282e-07, 0, 8.87151e-13, 0.999999
+new diag-short, short, long, inter ratios = 0.111111, 0, 0.888889, 0
+target diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+old diag-short, short, long, inter ratios = 0.851183, 0, 0.148817, 0
+new diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+ERROR in solver convergence
+num of negatives in qsolve=0 min qsolve 0.026652
+
+ans =
+
+     0
+
+stats on q
+-----------------
+sum(qsolve) = 0.95169
+min qsolve = 0.026652
+max qsolve = 0.34648
+mean qsolve = 0.13596
+sum(projected-onto-simplex qe) = 1
+min qe = 0.033554
+max qe = 0.35338
+mean qe = 0.14286
+max diff abs(qe-qsolve) = 0.0069017
+final sol: qsum = 1
+stats on pij
+-----------------
+sum(pij) = 2.2289
+sum(normalized pij) = 2
+min p = 0
+max p = 0.53201
+mean p = 0.040816
+target diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+old diag-short, short, long, inter ratios = 0.467995, 0, 0.532005, 0
+new diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+
+nume =
+
+    47
+
+target diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+old diag-short, short, long, inter ratios = 0.998261, 0, 0.00173918, 0
+new diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+target diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+old diag-short, short, long, inter ratios = 0.950577, 0, 0.049423, 0
+new diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+target diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+old diag-short, short, long, inter ratios = 0.0861028, 0, 0.913897, 0
+new diag-short, short, long, inter ratios = 0.553191, 0, 0.446809, 0
+calculating poisson log likelihood approximation
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+optimal alpha0.089063
+optimal alpha 0.49416
+optimal alpha  0.4773
+optimal alpha 0.49071
+
+approx_flag =
+
+     1
+
+calculating p-val for 0 tiles with zero events
+hi
+Elapsed time is 0.072833 seconds.
+calculating p-val for 2 tiles with 1 event
+Elapsed time is 0.002876 seconds.
+calculating support for 6 tiles with >1 events
+Elapsed time is 0.330118 seconds.
+calculating p-val for 6 tiles with >1 events
+Elapsed time is 0.033861 seconds.
+generating numeric hits table...
+
+warning: if this takes a long time, try changing the FDR threshold or the length of your bins.
+This function loops through every gene in the significant bin. 
+NOTE TO SELF to check this function 
+done with HitsTableCV
+
+ans =
+
+     0
+
+
+ans =
+
+    38
+
+the number of hits pre-filtration is ...1
+the number of hits post-filtration is ...1
+
+ans =
+
+  38x23 table
+
+    cluster_num            sid              gene_i      all_genes_i      gene_j       all_genes_j    subtype     bin_i    chr_i      pos_i       strand_i    bin_j    chr_j      pos_j       strand_j    tile_qval    pval     prob         class        num_hits    stddev_i    stddev_j       tier   
+    ___________    ____________________    _________    ___________    ___________    ___________    ________    _____    _____    __________    ________    _____    _____    __________    ________    _________    ____    _______    ____________    ________    ________    ________    __________
+
+         1         {'TCGA-BJ-A0ZJ-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'+'}        6       10      5.9866e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-BJ-A0ZJ-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3117e+07     {'-'}        6       10      5.9866e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-BJ-A28Z-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9853e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-BJ-A28Z-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3156e+07     {'+'}        6       10      5.9664e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-CE-A13K-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9793e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-DJ-A2Q1-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9871e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-DJ-A3V3-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9875e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-DJ-A4UQ-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'+'}        6       10      5.9862e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-DJ-A4UQ-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9862e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-DJ-A4V5-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'+'}        6       10      5.9893e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-DJ-A4V5-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9893e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-DO-A1JZ-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'+'}        6       10      5.9701e+07     {'-'}          0         0      0.44681    "deletion"         21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-DO-A1JZ-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9897e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-E3-A3E0-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3114e+07     {'+'}        6       10      5.9879e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-E3-A3E0-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'+'}        6       10      5.9879e+07     {'-'}          0         0      0.44681    "deletion"         21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-E8-A44M-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3111e+07     {'+'}        6       10      6.0041e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-E8-A44M-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9866e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-EL-A3CY-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9881e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-EL-A3CY-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'+'}        6       10      5.9881e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-EL-A3TB-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'+'}        6       10      5.9897e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-EL-A3TB-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9897e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-EL-A3ZP-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'+'}        6       10      5.9864e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-EL-A3ZP-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9864e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-EL-A3ZS-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10        5.99e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-EM-A3AN-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9859e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-ET-A39R-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'+'}        6       10      5.9857e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-ET-A39R-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9858e+07     {'+'}          0         0      0.44681    "tandem_dup"       21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-ET-A39R-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9858e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-ET-A3DR-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'+'}        6       10      5.9881e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-ET-A3DR-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3116e+07     {'-'}        6       10      5.9881e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-ET-A40T-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3114e+07     {'+'}        6       10      5.9899e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-ET-A40T-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9899e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-FK-A3SE-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3117e+07     {'-'}        6       10      5.9896e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-FK-A3SE-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3117e+07     {'+'}        6       10      5.9896e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-FK-A4UB-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'+'}        6       10      5.9905e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-FK-A4UB-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9905e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-J8-A4HW-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'+'}        6       10      5.9876e+07     {'+'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+         1         {'TCGA-J8-A4HW-01A'}    {'RET**'}    {1x1 cell}     {'CCDC6**'}    {1x5 cell}     {'THCA'}      5       10      4.3115e+07     {'-'}        6       10      5.9876e+07     {'-'}          0         0      0.44681    "inversion"        21        6645.6      56407      {'tier 2'}
+

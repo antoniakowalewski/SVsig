@@ -1,0 +1,421 @@
+
+[run2DModel] effective parameters
+--work_dir=/Users/akowalew/SVsig-antoniakowalewski
+--sv_file=/Users/akowalew/SVsig-antoniakowalewski/data/input_data/SARC.new.merged.filtered.SV_svsig.csv
+--output_file=/Users/akowalew/SVsig-antoniakowalewski/results/SARC.new.fdr0.1.bin5e5.hg38.txt
+--model_exist=false
+--model_file=NA
+--complex_model=false
+--weights=false
+--std_filter=10
+--len_filter=1e+06
+--bks_cluster=1
+--fdr_threshold=0.1
+--tier_std_cutoff=42833.6
+--num_breakpoints_per_bin=100
+--bin_length=500000
+--chr_list=1:23
+--genome_build=hg_38
+--random_seed=NA
+--save_bin_index=false
+
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 3)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 5)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 6)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+[Warning: The value of local variables may have been changed to match the
+globals.  Future versions of MATLAB will require that you declare a variable to
+be global before you use that variable.] 
+[> In break_invasion_model (line 10)
+In mixmodel (line 6)
+In runSVsig (line 37)
+In run2DModel (line 134)] 
+generating events array...
+masked 437 events
+masked 25 events
+setting bins boundaries...
+removed 36494 events in 3353bins
+building event matrix...
+removing events from more than one sample per bin...
+...removed 10162 events
+removing bins with zero variance...
+...removed 8 events
+Excluded chromosomes: 
+calculating marginal probabilities...
+calculating conditional probabilities...
+target diag-short, short, long, inter ratios = 0.117406, 0.0341036, 0.443347, 0.405143
+old diag-short, short, long, inter ratios = 1.56226e-09, 4.90413e-13, 4.9764e-12, 1
+new diag-short, short, long, inter ratios = 0.117406, 0.0341036, 0.443347, 0.405143
+target diag-short, short, long, inter ratios = 0.199529, 0.057042, 0.395214, 0.348215
+old diag-short, short, long, inter ratios = 1.56226e-09, 8.00709e-13, 5.12303e-12, 1
+new diag-short, short, long, inter ratios = 0.199529, 0.057042, 0.395214, 0.348215
+target diag-short, short, long, inter ratios = 0.123662, 0.041162, 0.432947, 0.402229
+old diag-short, short, long, inter ratios = 1.56226e-09, 5.76395e-13, 5.01071e-12, 1
+new diag-short, short, long, inter ratios = 0.123662, 0.041162, 0.432947, 0.402229
+target diag-short, short, long, inter ratios = 0.116923, 0.0367473, 0.454154, 0.392176
+old diag-short, short, long, inter ratios = 1.56226e-09, 5.65713e-13, 5.384e-12, 1
+new diag-short, short, long, inter ratios = 0.116923, 0.0367473, 0.454154, 0.392176
+target diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+old diag-short, short, long, inter ratios = 0.146626, 0.0414267, 0.411249, 0.400698
+new diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+Converged on 8 of 100
+num of negatives in qsolve=54 min qsolve -0.00035339
+
+ans =
+
+    0.0176
+
+stats on q
+-----------------
+sum(qsolve) = 0.97167
+min qsolve = -0.00035339
+max qsolve = 0.017174
+mean qsolve = 0.00036028
+sum(projected-onto-simplex qe) = 1
+min qe = 0
+max qe = 0.017184
+mean qe = 0.00037078
+max diff abs(qe-qsolve) = 0.00035339
+final sol: qsum = 1
+stats on pij
+-----------------
+sum(pij) = 2.0113
+sum(normalized pij) = 2
+min p = 0
+max p = 0.0033769
+mean p = 2.7496e-07
+target diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+old diag-short, short, long, inter ratios = 0.124053, 0.0480049, 0.493795, 0.334147
+new diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+
+nume =
+
+       46246
+
+target diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+old diag-short, short, long, inter ratios = 0.273525, 0.00173613, 0.0516625, 0.673076
+new diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+target diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+old diag-short, short, long, inter ratios = 0.154259, 0.0404251, 0.388283, 0.417033
+new diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+target diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+old diag-short, short, long, inter ratios = 0.128677, 0.0504918, 0.484788, 0.336043
+new diag-short, short, long, inter ratios = 0.141461, 0.0428145, 0.430178, 0.385547
+calculating poisson log likelihood approximation
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+
+Local minimum found that satisfies the constraints.
+
+Optimization completed because the objective function is non-decreasing in 
+feasible directions, to within the value of the optimality tolerance,
+and constraints are satisfied to within the value of the constraint tolerance.
+
+optimal alpha0.34082
+optimal alpha 0.8572
+optimal alpha0.76151
+optimal alpha0.61272
+
+approx_flag =
+
+     1
+
+calculating p-val for 3601556 tiles with zero events
+hi
+Elapsed time is 0.172350 seconds.
+calculating p-val for 31788 tiles with 1 event
+Elapsed time is 0.006945 seconds.
+calculating support for 4909 tiles with >1 events
+Elapsed time is 13.938437 seconds.
+calculating p-val for 4909 tiles with >1 events
+Elapsed time is 1.527481 seconds.
+generating numeric hits table...
+
+warning: if this takes a long time, try changing the FDR threshold or the length of your bins.
+This function loops through every gene in the significant bin. 
+NOTE TO SELF to check this function 
+done with HitsTableCV
+
+ans =
+
+     0
+
+
+ans =
+
+   606
+
+the number of hits pre-filtration is ...21
+the number of hits post-filtration is ...21
+
+ans =
+
+  234x23 table
+
+    cluster_num            sid                 gene_i         all_genes_i         gene_j         all_genes_j    subtype     bin_i    chr_i      pos_i       strand_i    bin_j    chr_j      pos_j       strand_j    tile_qval      pval         prob          class        num_hits     stddev_i      stddev_j        tier   
+    ___________    ____________________    _______________    ___________    ________________    ___________    ________    _____    _____    __________    ________    _____    _____    __________    ________    __________    _______    __________    ____________    ________    __________    __________    __________
+
+         1         {'TCGA-3B-A9HQ-01A'}    {'SLC9A2'     }    {1x1  cell}    {'(LINC02549)' }    {1x1  cell}    {'SARC'}     207       2      1.0265e+08     {'+'}       741       6      6.8454e+07     {'+'}               0          0    5.4837e-08    "inter_chr"         4               13        12.702    {'tier 1'}
+         1         {'TCGA-3B-A9HR-01A'}    {'SLC9A2'     }    {1x1  cell}    {'(LINC02549)' }    {1x1  cell}    {'SARC'}     207       2      1.0265e+08     {'+'}       741       6      6.8454e+07     {'+'}               0          0    5.4837e-08    "inter_chr"         4               13        12.702    {'tier 1'}
+         1         {'TCGA-DX-A7ER-01A'}    {'SLC9A2'     }    {1x1  cell}    {'(LINC02549)' }    {1x1  cell}    {'SARC'}     207       2      1.0265e+08     {'+'}       741       6      6.8454e+07     {'+'}               0          0    5.4837e-08    "inter_chr"         4               13        12.702    {'tier 1'}
+         1         {'TCGA-MJ-A68J-01A'}    {'SLC9A2'     }    {1x1  cell}    {'(LINC02549)' }    {1x1  cell}    {'SARC'}     207       2      1.0265e+08     {'+'}       741       6      6.8454e+07     {'+'}               0          0    5.4837e-08    "inter_chr"         4               13        12.702    {'tier 1'}
+         2         {'TCGA-DX-A3UD-01A'}    {'(SFT2D2)'   }    {1x1  cell}    {'PDS5B'       }    {1x1  cell}    {'SARC'}     103       1      1.6822e+08     {'+'}      1771      13      3.2718e+07     {'+'}               0          0    1.1723e-07    "inter_chr"         4           13.276        18.565    {'tier 1'}
+         2         {'TCGA-IW-A3M4-01A'}    {'(SFT2D2)'   }    {1x1  cell}    {'PDS5B'       }    {1x1  cell}    {'SARC'}     103       1      1.6822e+08     {'+'}      1771      13      3.2718e+07     {'+'}               0          0    1.1723e-07    "inter_chr"         4           13.276        18.565    {'tier 1'}
+         2         {'TCGA-K1-A42X-01A'}    {'(SFT2D2)'   }    {1x1  cell}    {'PDS5B'       }    {1x1  cell}    {'SARC'}     103       1      1.6822e+08     {'+'}      1771      13      3.2718e+07     {'+'}               0          0    1.1723e-07    "inter_chr"         4           13.276        18.565    {'tier 1'}
+         2         {'TCGA-X6-A7WA-01A'}    {'(SFT2D2)'   }    {1x1  cell}    {'PDS5B'       }    {1x1  cell}    {'SARC'}     103       1      1.6822e+08     {'+'}      1771      13      3.2718e+07     {'+'}               0          0    1.1723e-07    "inter_chr"         4           13.276        18.565    {'tier 1'}
+         3         {'TCGA-DX-A23Z-01A'}    {'LINC00417'  }    {1x1  cell}    {'CYP4F35P'    }    {1x1  cell}    {'SARC'}    1755      13      1.8628e+07     {'+'}      2209      18      1.4432e+07     {'+'}               0          0     1.709e-07    "inter_chr"         6            72211         61449    {'tier 3'}
+         3         {'TCGA-DX-A48L-01A'}    {'LINC00417'  }    {1x1  cell}    {'CYP4F35P'    }    {1x1  cell}    {'SARC'}    1755      13      1.8605e+07     {'-'}      2209      18      1.4455e+07     {'-'}               0          0     1.709e-07    "inter_chr"         6            72211         61449    {'tier 3'}
+         3         {'TCGA-DX-A8BM-01A'}    {'LINC00417'  }    {1x1  cell}    {'CYP4F35P'    }    {1x1  cell}    {'SARC'}    1755      13      1.8755e+07     {'-'}      2209      18      1.4326e+07     {'-'}               0          0     1.709e-07    "inter_chr"         6            72211         61449    {'tier 3'}
+         3         {'TCGA-DX-A8BX-01A'}    {'LINC00417'  }    {1x1  cell}    {'CYP4F35P'    }    {1x1  cell}    {'SARC'}    1755      13      1.8628e+07     {'-'}      2209      18      1.4432e+07     {'-'}               0          0     1.709e-07    "inter_chr"         6            72211         61449    {'tier 3'}
+         3         {'TCGA-FX-A3NJ-01A'}    {'LINC00417'  }    {1x1  cell}    {'CYP4F35P'    }    {1x1  cell}    {'SARC'}    1755      13      1.8755e+07     {'-'}      2209      18      1.4326e+07     {'-'}               0          0     1.709e-07    "inter_chr"         6            72211         61449    {'tier 3'}
+         3         {'TCGA-SI-AA8B-01A'}    {'LINC00417'  }    {1x1  cell}    {'CYP4F35P'    }    {1x1  cell}    {'SARC'}    1755      13      1.8605e+07     {'-'}      2209      18      1.4455e+07     {'-'}               0          0     1.709e-07    "inter_chr"         6            72211         61449    {'tier 3'}
+         4         {'TCGA-DX-A7EO-01A'}    {'(FGF8)'     }    {1x2  cell}    {'OGT'         }    {1x2  cell}    {'SARC'}    1382      10      1.0173e+08     {'+'}      2596      23      7.1569e+07     {'+'}               0          0    9.7024e-08    "inter_chr"         4           32.684        15.521    {'tier 1'}
+         4         {'TCGA-DX-A8BK-01A'}    {'(FGF8)'     }    {1x2  cell}    {'OGT'         }    {1x2  cell}    {'SARC'}    1382      10      1.0173e+08     {'+'}      2596      23      7.1569e+07     {'+'}               0          0    9.7024e-08    "inter_chr"         4           32.684        15.521    {'tier 1'}
+         4         {'TCGA-DX-A8BO-01A'}    {'(FGF8)'     }    {1x2  cell}    {'OGT'         }    {1x2  cell}    {'SARC'}    1382      10      1.0173e+08     {'+'}      2596      23      7.1569e+07     {'+'}               0          0    9.7024e-08    "inter_chr"         4           32.684        15.521    {'tier 1'}
+         4         {'TCGA-IW-A3M4-01A'}    {'(FGF8)'     }    {1x2  cell}    {'OGT'         }    {1x2  cell}    {'SARC'}    1382      10      1.0173e+08     {'+'}      2596      23      7.1569e+07     {'+'}               0          0    9.7024e-08    "inter_chr"         4           32.684        15.521    {'tier 1'}
+         5         {'TCGA-3B-A9HL-01A'}    {'(ACVR2A)*'  }    {1x1  cell}    {'ADAM22'      }    {1x1  cell}    {'SARC'}     235       2      1.4778e+08     {'+'}       953       7      8.8111e+07     {'+'}       2.376e-11    1.1e-16    3.3805e-08    "inter_chr"         3           21.127        32.036    {'tier 1'}
+         5         {'TCGA-DX-A6BG-01A'}    {'(ACVR2A)*'  }    {1x1  cell}    {'ADAM22'      }    {1x1  cell}    {'SARC'}     235       2      1.4778e+08     {'+'}       953       7      8.8111e+07     {'+'}       2.376e-11    1.1e-16    3.3805e-08    "inter_chr"         3           21.127        32.036    {'tier 1'}
+         5         {'TCGA-QC-A6FX-01A'}    {'(ACVR2A)*'  }    {1x1  cell}    {'ADAM22'      }    {1x1  cell}    {'SARC'}     235       2      1.4778e+08     {'+'}       953       7      8.8111e+07     {'+'}       2.376e-11    1.1e-16    3.3805e-08    "inter_chr"         3           21.127        32.036    {'tier 1'}
+         6         {'TCGA-3B-A9HJ-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5872e+07     {'+'}      1674      12      9.1263e+07     {'+'}       2.376e-11    1.1e-16    6.7178e-06    "inversion"         6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-3B-A9HL-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5765e+07     {'+'}      1674      12      9.1299e+07     {'-'}       2.376e-11    1.1e-16    6.7178e-06    "deletion"          6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-3B-A9HL-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5795e+07     {'-'}      1674      12      9.1223e+07     {'-'}       2.376e-11    1.1e-16    6.7178e-06    "inversion"         6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-DX-A1L4-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5837e+07     {'+'}      1674      12      9.1207e+07     {'+'}       2.376e-11    1.1e-16    6.7178e-06    "inversion"         6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-DX-A23R-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5815e+07     {'-'}      1674      12      9.1259e+07     {'+'}       2.376e-11    1.1e-16    6.7178e-06    "tandem_dup"        6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-DX-A2IZ-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5767e+07     {'-'}      1674      12      9.1209e+07     {'-'}       2.376e-11    1.1e-16    6.7178e-06    "inversion"         6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-DX-A2IZ-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5832e+07     {'-'}      1674      12      9.1224e+07     {'-'}       2.376e-11    1.1e-16    6.7178e-06    "inversion"         6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-DX-A2IZ-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5835e+07     {'-'}      1674      12      9.1231e+07     {'+'}       2.376e-11    1.1e-16    6.7178e-06    "tandem_dup"        6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-DX-A3M1-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.5795e+07     {'+'}      1674      12      9.1351e+07     {'+'}       2.376e-11    1.1e-16    6.7178e-06    "inversion"         6            84727     1.317e+05    {'tier 3'}
+         6         {'TCGA-DX-A3M1-01A'}    {'HMGA2*'     }    {1x3  cell}    {'(DCN)'       }    {1x1  cell}    {'SARC'}    1623      12      6.6059e+07     {'-'}      1674      12      9.1643e+07     {'-'}       2.376e-11    1.1e-16    6.7178e-06    "inversion"         6            84727     1.317e+05    {'tier 3'}
+         7         {'TCGA-3B-A9HS-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12      5.7777e+07     {'+'}      1639      12      7.4074e+07     {'-'}      4.0393e-08    2.1e-13    5.9341e-05    "deletion"         10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-DX-A1KZ-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12      5.7761e+07     {'+'}      1639      12      7.3968e+07     {'-'}      4.0393e-08    2.1e-13    5.9341e-05    "deletion"         10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-DX-A1KZ-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12        5.79e+07     {'+'}      1639      12      7.3754e+07     {'-'}      4.0393e-08    2.1e-13    5.9341e-05    "deletion"         10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-DX-A1L3-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12       5.779e+07     {'+'}      1639      12      7.4054e+07     {'+'}      4.0393e-08    2.1e-13    5.9341e-05    "inversion"        10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-DX-A6BE-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12      5.7778e+07     {'+'}      1639      12      7.3928e+07     {'-'}      4.0393e-08    2.1e-13    5.9341e-05    "deletion"         10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-DX-A6BF-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12      5.7721e+07     {'-'}      1639      12      7.3968e+07     {'-'}      4.0393e-08    2.1e-13    5.9341e-05    "inversion"        10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-DX-A6BG-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12      5.7756e+07     {'+'}      1639      12       7.394e+07     {'+'}      4.0393e-08    2.1e-13    5.9341e-05    "inversion"        10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-DX-AB2F-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12      5.7731e+07     {'-'}      1639      12      7.3737e+07     {'+'}      4.0393e-08    2.1e-13    5.9341e-05    "tandem_dup"       10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-DX-AB2H-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12      5.7835e+07     {'-'}      1639      12      7.3692e+07     {'+'}      4.0393e-08    2.1e-13    5.9341e-05    "tandem_dup"       10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-FX-A3NK-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12       5.777e+07     {'-'}      1639      12      7.4006e+07     {'-'}      4.0393e-08    2.1e-13    5.9341e-05    "inversion"        10            49765    1.2924e+05    {'tier 3'}
+         7         {'TCGA-SG-A6Z7-01A'}    {'CDK4*'      }    {1x14 cell}    {'(LINC02882)' }    {1x1  cell}    {'SARC'}    1607      12      5.7761e+07     {'+'}      1639      12      7.3936e+07     {'-'}      4.0393e-08    2.1e-13    5.9341e-05    "deletion"         10            49765    1.2924e+05    {'tier 3'}
+         8         {'TCGA-3R-A8YX-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5951e+07     {'+'}      1628      12      6.8358e+07     {'-'}      4.5805e-08    2.5e-13    0.00011546    "deletion"          9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A23T-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5818e+07     {'-'}      1628      12      6.8471e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "tandem_dup"        9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A23T-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5926e+07     {'+'}      1628      12      6.8427e+07     {'-'}      4.5805e-08    2.5e-13    0.00011546    "deletion"          9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A2J1-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5778e+07     {'-'}      1628      12        6.84e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "tandem_dup"        9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A3LY-01B'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5812e+07     {'-'}      1628      12       6.861e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "tandem_dup"        9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A3LY-01B'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5899e+07     {'+'}      1628      12      6.8595e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "inversion"         9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A3LY-01B'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.6047e+07     {'+'}      1628      12      6.8306e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "inversion"         9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A3U5-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12        6.58e+07     {'-'}      1628      12      6.8427e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "tandem_dup"        9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A6BE-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5963e+07     {'+'}      1628      12       6.855e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "inversion"         9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A6BF-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5816e+07     {'-'}      1628      12        6.84e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "tandem_dup"        9            94825         95967    {'tier 3'}
+         8         {'TCGA-DX-A7ES-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5778e+07     {'-'}      1628      12      6.8356e+07     {'-'}      4.5805e-08    2.5e-13    0.00011546    "inversion"         9            94825         95967    {'tier 3'}
+         8         {'TCGA-SG-A6Z7-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.5775e+07     {'-'}      1628      12      6.8538e+07     {'+'}      4.5805e-08    2.5e-13    0.00011546    "tandem_dup"        9            94825         95967    {'tier 3'}
+         8         {'TCGA-SG-A6Z7-01A'}    {'HMGA2*'     }    {1x3  cell}    {'LINC02384*'  }    {1x2  cell}    {'SARC'}    1623      12      6.6004e+07     {'-'}      1628      12       6.841e+07     {'-'}      4.5805e-08    2.5e-13    0.00011546    "inversion"         9            94825         95967    {'tier 3'}
+         9         {'TCGA-DX-A1KW-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8795e+07     {'+'}      1631      12       6.981e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A1KW-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12       6.908e+07     {'-'}      1631      12      6.9819e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A1KZ-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.9027e+07     {'+'}      1631      12       7.011e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A1L0-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12         6.9e+07     {'-'}      1631      12      7.0067e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A1L3-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8837e+07     {'-'}      1631      12      6.9743e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "tandem_dup"       18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A1L3-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8924e+07     {'+'}      1631      12      7.0046e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A1L3-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12       6.894e+07     {'-'}      1631      12      6.9849e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A1L3-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.9031e+07     {'-'}      1631      12      6.9746e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A2J0-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8966e+07     {'-'}      1631      12      7.0093e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "tandem_dup"       18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A2J1-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8891e+07     {'+'}      1631      12      6.9789e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A3LS-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8718e+07     {'-'}      1631      12      6.9881e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "tandem_dup"       18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A3LS-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8769e+07     {'-'}      1631      12       6.977e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "tandem_dup"       18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A3LS-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8825e+07     {'+'}      1631      12      6.9655e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A3M1-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8978e+07     {'-'}      1631      12      7.0131e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A3U5-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8697e+07     {'+'}      1631      12       7.014e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A6BF-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8854e+07     {'-'}      1631      12      6.9649e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "tandem_dup"       18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A6BH-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8987e+07     {'+'}      1631      12      6.9956e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A7EI-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12       6.888e+07     {'+'}      1631      12      7.0056e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A7EI-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8912e+07     {'+'}      1631      12      6.9766e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A7EI-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8912e+07     {'+'}      1631      12      6.9785e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-A7EI-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8942e+07     {'+'}      1631      12      6.9845e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-AB2F-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8815e+07     {'-'}      1631      12      6.9894e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "tandem_dup"       18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-AB2F-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8958e+07     {'-'}      1631      12      6.9687e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-AB2H-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8841e+07     {'+'}      1631      12      6.9909e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-DX-AB35-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8783e+07     {'+'}      1631      12      6.9789e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-FX-A3NK-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8826e+07     {'+'}      1631      12      6.9828e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-FX-A3NK-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8931e+07     {'-'}      1631      12      6.9948e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-FX-A3NK-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8931e+07     {'+'}      1631      12      6.9948e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-FX-A3NK-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8939e+07     {'+'}      1631      12      6.9686e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-PC-A5DN-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8837e+07     {'+'}      1631      12      6.9818e+07     {'-'}      1.5344e-05    1.1e-10    0.00038828    "deletion"         18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-PC-A5DN-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8932e+07     {'+'}      1631      12      6.9652e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+         9         {'TCGA-X6-A8C6-01A'}    {'MDM2*'      }    {1x6  cell}    {'BEST3'       }    {1x4  cell}    {'SARC'}    1629      12      6.8782e+07     {'+'}      1631      12      6.9823e+07     {'+'}      1.5344e-05    1.1e-10    0.00038828    "inversion"        18            92717    1.4703e+05    {'tier 3'}
+        10         {'TCGA-3B-A9HO-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7864e+07     {'+'}      1629      12      6.8908e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-3R-A8YX-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7891e+07     {'+'}      1629      12      6.8955e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A1KW-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7766e+07     {'+'}      1629      12      6.8704e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A1KW-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8007e+07     {'+'}      1629      12      6.8695e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A1KW-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8011e+07     {'-'}      1629      12      6.8699e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A1KZ-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12        5.78e+07     {'+'}      1629      12      6.9104e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A1L4-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12       5.777e+07     {'+'}      1629      12      6.8909e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A23R-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7846e+07     {'-'}      1629      12      6.8692e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A23T-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7752e+07     {'+'}      1629      12      6.8693e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A23T-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8069e+07     {'-'}      1629      12      6.8881e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A23Z-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7818e+07     {'-'}      1629      12      6.8796e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A2IZ-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12       5.763e+07     {'-'}      1629      12       6.875e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A2IZ-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7809e+07     {'-'}      1629      12      6.8755e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A2J1-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7836e+07     {'-'}      1629      12      6.9006e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A3LS-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7645e+07     {'+'}      1629      12      6.8874e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A3LS-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7791e+07     {'-'}      1629      12      6.8742e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A3LY-01B'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7747e+07     {'+'}      1629      12      6.9111e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A3U5-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8068e+07     {'-'}      1629      12      6.8996e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A6BE-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7626e+07     {'-'}      1629      12      6.9118e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A6BF-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7721e+07     {'-'}      1629      12        6.91e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A6BF-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7721e+07     {'-'}      1629      12      6.9101e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A6BF-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7721e+07     {'-'}      1629      12        6.91e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A6BF-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7722e+07     {'+'}      1629      12      6.9101e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2F-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7876e+07     {'+'}      1629      12      6.8993e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2G-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8023e+07     {'-'}      1629      12      6.8825e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2S-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7987e+07     {'-'}      1629      12      6.8743e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-FX-A3NK-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7859e+07     {'+'}      1629      12      6.8833e+07     {'-'}      2.7145e-05    1.9e-10    0.00019881    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-SG-A6Z7-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7764e+07     {'+'}      1629      12      6.8797e+07     {'+'}      2.7145e-05    1.9e-10    0.00019881    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-3B-A9HL-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7769e+07     {'+'}      1630      12      6.9542e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-3B-A9HL-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7819e+07     {'-'}      1630      12       6.946e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-3B-A9HL-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7831e+07     {'+'}      1630      12       6.945e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-3B-A9HO-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7941e+07     {'-'}      1630      12       6.938e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-3R-A8YX-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12       5.789e+07     {'+'}      1630      12       6.933e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-3R-A8YX-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8085e+07     {'-'}      1630      12      6.9401e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A1L3-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8065e+07     {'-'}      1630      12      6.9466e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A23R-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7842e+07     {'-'}      1630      12      6.9206e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A23T-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7759e+07     {'+'}      1630      12      6.9501e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A23T-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7825e+07     {'+'}      1630      12      6.9366e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A23T-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7838e+07     {'-'}      1630      12      6.9349e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A240-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7794e+07     {'+'}      1630      12      6.9437e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A3LT-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7692e+07     {'-'}      1630      12      6.9605e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A3LT-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7759e+07     {'+'}      1630      12      6.9358e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A3LY-01B'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7762e+07     {'+'}      1630      12      6.9628e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A3U5-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7643e+07     {'+'}      1630      12      6.9458e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A6BH-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7762e+07     {'+'}      1630      12      6.9512e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A6BH-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7934e+07     {'-'}      1630      12      6.9535e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-A7EI-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8003e+07     {'+'}      1630      12      6.9336e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2G-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7693e+07     {'-'}      1630      12      6.9487e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2G-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7694e+07     {'+'}      1630      12      6.9528e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2G-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7708e+07     {'+'}      1630      12      6.9369e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2G-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7944e+07     {'+'}      1630      12       6.944e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2G-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7972e+07     {'+'}      1630      12      6.9447e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2H-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7635e+07     {'+'}      1630      12      6.9632e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB2H-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7743e+07     {'-'}      1630      12      6.9629e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB35-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.7839e+07     {'+'}      1630      12      6.9519e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "deletion"         29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-DX-AB36-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12       5.762e+07     {'-'}      1630      12      6.9577e+07     {'+'}      0.00020884    1.9e-10    0.00015994    "tandem_dup"       29        1.296e+05    3.1891e+05    {'tier 3'}
+        10         {'TCGA-FX-A3NK-01A'}    {'CDK4*'      }    {1x23 cell}    {'MDM2*'       }    {1x16 cell}    {'SARC'}    1607      12      5.8097e+07     {'-'}      1630      12      6.9617e+07     {'-'}      0.00020884    1.9e-10    0.00015994    "inversion"        29        1.296e+05    3.1891e+05    {'tier 3'}
+        11         {'TCGA-3B-A9HS-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9749e+07     {'-'}      1684      12      9.6246e+07     {'-'}      0.00029605    2.8e-09    8.8939e-06    "inversion"         5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-3B-A9HS-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9753e+07     {'+'}      1684      12      9.6246e+07     {'+'}      0.00029605    2.8e-09    8.8939e-06    "inversion"         5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-DX-A1KW-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9896e+07     {'-'}      1684      12      9.6252e+07     {'+'}      0.00029605    2.8e-09    8.8939e-06    "tandem_dup"        5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-DX-A1L3-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9752e+07     {'-'}      1684      12       9.622e+07     {'+'}      0.00029605    2.8e-09    8.8939e-06    "tandem_dup"        5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-DX-A1L3-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9918e+07     {'-'}      1684      12      9.6297e+07     {'-'}      0.00029605    2.8e-09    8.8939e-06    "inversion"         5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-DX-A1L3-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9918e+07     {'+'}      1684      12      9.6295e+07     {'-'}      0.00029605    2.8e-09    8.8939e-06    "deletion"          5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-DX-A3LS-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9785e+07     {'+'}      1684      12      9.6244e+07     {'+'}      0.00029605    2.8e-09    8.8939e-06    "inversion"         5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-DX-A3LS-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9785e+07     {'+'}      1684      12      9.6339e+07     {'-'}      0.00029605    2.8e-09    8.8939e-06    "deletion"          5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-WK-A8XO-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      6.9721e+07     {'+'}      1684      12      9.6232e+07     {'-'}      0.00029605    2.8e-09    8.8939e-06    "deletion"          5       1.0298e+05    1.1943e+05    {'tier 3'}
+        11         {'TCGA-WK-A8XO-01A'}    {'RAB3IP'     }    {1x3  cell}    {'ELK3'        }    {1x1  cell}    {'SARC'}    1631      12      7.0033e+07     {'+'}      1684      12      9.6623e+07     {'-'}      0.00029605    2.8e-09    8.8939e-06    "deletion"          5       1.0298e+05    1.1943e+05    {'tier 3'}
+        12         {'TCGA-3B-A9HL-01A'}    {'CDK4*'      }    {1x18 cell}    {'LOC643339'   }    {1x6  cell}    {'SARC'}    1607      12      5.7728e+07     {'+'}      1678      12      9.3664e+07     {'-'}        0.001011      1e-08    2.0375e-06    "deletion"          6       1.6324e+05    1.6558e+05    {'tier 3'}
+        12         {'TCGA-DX-A1L0-01A'}    {'CDK4*'      }    {1x18 cell}    {'LOC643339'   }    {1x6  cell}    {'SARC'}    1607      12      5.7734e+07     {'+'}      1678      12      9.3548e+07     {'-'}        0.001011      1e-08    2.0375e-06    "deletion"          6       1.6324e+05    1.6558e+05    {'tier 3'}
+        12         {'TCGA-DX-A6BF-01A'}    {'CDK4*'      }    {1x18 cell}    {'LOC643339'   }    {1x6  cell}    {'SARC'}    1607      12      5.7822e+07     {'+'}      1678      12      9.3399e+07     {'+'}        0.001011      1e-08    2.0375e-06    "inversion"         6       1.6324e+05    1.6558e+05    {'tier 3'}
+        12         {'TCGA-DX-A7EI-01A'}    {'CDK4*'      }    {1x18 cell}    {'LOC643339'   }    {1x6  cell}    {'SARC'}    1607      12      5.7646e+07     {'+'}      1678      12      9.3249e+07     {'-'}        0.001011      1e-08    2.0375e-06    "deletion"          6       1.6324e+05    1.6558e+05    {'tier 3'}
+        12         {'TCGA-DX-AB2S-01A'}    {'CDK4*'      }    {1x18 cell}    {'LOC643339'   }    {1x6  cell}    {'SARC'}    1607      12      5.8089e+07     {'-'}      1678      12      9.3539e+07     {'+'}        0.001011      1e-08    2.0375e-06    "tandem_dup"        6       1.6324e+05    1.6558e+05    {'tier 3'}
+        12         {'TCGA-WK-A8XO-01A'}    {'CDK4*'      }    {1x18 cell}    {'LOC643339'   }    {1x6  cell}    {'SARC'}    1607      12      5.7665e+07     {'-'}      1678      12      9.3275e+07     {'+'}        0.001011      1e-08    2.0375e-06    "tandem_dup"        6       1.6324e+05    1.6558e+05    {'tier 3'}
+        13         {'TCGA-DX-A3LT-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.5873e+07     {'+'}      1632      12      7.0441e+07     {'+'}       0.0019592    2.1e-08       0.00013    "inversion"         6            90176         99933    {'tier 3'}
+        13         {'TCGA-DX-A3M1-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.5791e+07     {'-'}      1632      12      7.0427e+07     {'-'}       0.0019592    2.1e-08       0.00013    "inversion"         6            90176         99933    {'tier 3'}
+        13         {'TCGA-DX-A3M1-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.6053e+07     {'+'}      1632      12      7.0441e+07     {'+'}       0.0019592    2.1e-08       0.00013    "inversion"         6            90176         99933    {'tier 3'}
+        13         {'TCGA-DX-A6BF-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.5874e+07     {'+'}      1632      12      7.0579e+07     {'-'}       0.0019592    2.1e-08       0.00013    "deletion"          6            90176         99933    {'tier 3'}
+        13         {'TCGA-DX-AB2G-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.5811e+07     {'-'}      1632      12       7.048e+07     {'+'}       0.0019592    2.1e-08       0.00013    "tandem_dup"        6            90176         99933    {'tier 3'}
+        13         {'TCGA-DX-AB2H-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.5746e+07     {'-'}      1632      12      7.0594e+07     {'+'}       0.0019592    2.1e-08       0.00013    "tandem_dup"        6            90176         99933    {'tier 3'}
+        13         {'TCGA-DX-AB2H-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.5869e+07     {'+'}      1632      12      7.0583e+07     {'-'}       0.0019592    2.1e-08       0.00013    "deletion"          6            90176         99933    {'tier 3'}
+        13         {'TCGA-FX-A2QS-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.5805e+07     {'+'}      1632      12      7.0544e+07     {'+'}       0.0019592    2.1e-08       0.00013    "inversion"         6            90176         99933    {'tier 3'}
+        13         {'TCGA-FX-A2QS-01A'}    {'HMGA2*'     }    {1x3  cell}    {'PTPRB*'      }    {1x2  cell}    {'SARC'}    1623      12      6.5925e+07     {'-'}      1632      12      7.0288e+07     {'+'}       0.0019592    2.1e-08       0.00013    "tandem_dup"        6            90176         99933    {'tier 3'}
+        14         {'TCGA-DX-A48P-01A'}    {'LINC00417'  }    {1x1  cell}    {'LOC110091777'}    {1x2  cell}    {'SARC'}    1755      13      1.8665e+07     {'-'}      2444      21      1.3762e+07     {'+'}       0.0028191    3.2e-08     1.464e-07    "inter_chr"         3            51325         55510    {'tier 3'}
+        14         {'TCGA-DX-A7EI-01A'}    {'LINC00417'  }    {1x1  cell}    {'LOC110091777'}    {1x2  cell}    {'SARC'}    1755      13      1.8754e+07     {'-'}      2444      21      1.3858e+07     {'+'}       0.0028191    3.2e-08     1.464e-07    "inter_chr"         3            51325         55510    {'tier 3'}
+        14         {'TCGA-IF-A4AJ-01A'}    {'LINC00417'  }    {1x1  cell}    {'LOC110091777'}    {1x2  cell}    {'SARC'}    1755      13      1.8665e+07     {'-'}      2444      21      1.3762e+07     {'+'}       0.0028191    3.2e-08     1.464e-07    "inter_chr"         3            51325         55510    {'tier 3'}
+        15         {'TCGA-FX-A3TO-01A'}    {'ZNF595'     }    {1x1  cell}    {'(DUX4)'      }    {1x2  cell}    {'SARC'}     396       4           18072     {'-'}       501       4      1.9011e+08     {'+'}       0.0095081    1.2e-07    8.0421e-09    "tandem_dup"        2            50821        7556.1    {'tier 2'}
+        15         {'TCGA-X6-A7WD-01A'}    {'ZNF595'     }    {1x1  cell}    {'(DUX4)'      }    {1x2  cell}    {'SARC'}     396       4           89944     {'+'}       501       4      1.9012e+08     {'+'}       0.0095081    1.2e-07    8.0421e-09    "inversion"         2            50821        7556.1    {'tier 2'}
+        16         {'TCGA-DX-A6YX-01A'}    {'(TERT)*'    }    {1x3  cell}    {'FBN1'        }    {1x1  cell}    {'SARC'}     504       5      1.2965e+06     {'+'}      1945      15      4.8412e+07     {'+'}        0.010812    1.5e-07    3.3441e-07    "inter_chr"         3           8976.2         37346    {'tier 1'}
+        16         {'TCGA-DX-A6YX-01A'}    {'(TERT)*'    }    {1x3  cell}    {'FBN1'        }    {1x1  cell}    {'SARC'}     504       5      1.2965e+06     {'-'}      1945      15      4.8412e+07     {'-'}        0.010812    1.5e-07    3.3441e-07    "inter_chr"         3           8976.2         37346    {'tier 1'}
+        16         {'TCGA-DX-A8BQ-01A'}    {'(TERT)*'    }    {1x3  cell}    {'FBN1'        }    {1x1  cell}    {'SARC'}     504       5      1.3184e+06     {'-'}      1945      15      4.8502e+07     {'-'}        0.010812    1.5e-07    3.3441e-07    "inter_chr"         3           8976.2         37346    {'tier 1'}
+        16         {'TCGA-DX-A8BQ-01A'}    {'(TERT)*'    }    {1x3  cell}    {'FBN1'        }    {1x1  cell}    {'SARC'}     504       5      1.3185e+06     {'+'}      1945      15      4.8502e+07     {'+'}        0.010812    1.5e-07    3.3441e-07    "inter_chr"         3           8976.2         37346    {'tier 1'}
+        16         {'TCGA-DX-A8BX-01A'}    {'(TERT)*'    }    {1x3  cell}    {'FBN1'        }    {1x1  cell}    {'SARC'}     504       5      1.3075e+06     {'-'}      1945      15      4.8472e+07     {'-'}        0.010812    1.5e-07    3.3441e-07    "inter_chr"         3           8976.2         37346    {'tier 1'}
+        16         {'TCGA-DX-A8BX-01A'}    {'(TERT)*'    }    {1x3  cell}    {'FBN1'        }    {1x1  cell}    {'SARC'}     504       5      1.3075e+06     {'+'}      1945      15      4.8472e+07     {'-'}        0.010812    1.5e-07    3.3441e-07    "inter_chr"         3           8976.2         37346    {'tier 1'}
+        16         {'TCGA-DX-A8BX-01A'}    {'(TERT)*'    }    {1x3  cell}    {'FBN1'        }    {1x1  cell}    {'SARC'}     504       5      1.3075e+06     {'+'}      1945      15      4.8471e+07     {'+'}        0.010812    1.5e-07    3.3441e-07    "inter_chr"         3           8976.2         37346    {'tier 1'}
+        17         {'TCGA-DX-A1L4-01A'}    {'SASH1'      }    {1x1  cell}    {'YEATS4'      }    {1x3  cell}    {'SARC'}     856       6       1.484e+08     {'+'}      1630      12      6.9411e+07     {'+'}        0.011307    1.6e-07     2.479e-06    "inter_chr"         5        1.571e+05         78123    {'tier 3'}
+        17         {'TCGA-DX-A1L4-01A'}    {'SASH1'      }    {1x1  cell}    {'YEATS4'      }    {1x3  cell}    {'SARC'}     856       6      1.4871e+08     {'-'}      1630      12      6.9406e+07     {'-'}        0.011307    1.6e-07     2.479e-06    "inter_chr"         5        1.571e+05         78123    {'tier 3'}
+        17         {'TCGA-DX-A23T-01A'}    {'SASH1'      }    {1x1  cell}    {'YEATS4'      }    {1x3  cell}    {'SARC'}     856       6      1.4836e+08     {'+'}      1630      12      6.9372e+07     {'-'}        0.011307    1.6e-07     2.479e-06    "inter_chr"         5        1.571e+05         78123    {'tier 3'}
+        17         {'TCGA-DX-A23Z-01A'}    {'SASH1'      }    {1x1  cell}    {'YEATS4'      }    {1x3  cell}    {'SARC'}     856       6      1.4848e+08     {'+'}      1630      12      6.9441e+07     {'-'}        0.011307    1.6e-07     2.479e-06    "inter_chr"         5        1.571e+05         78123    {'tier 3'}
+        17         {'TCGA-DX-A3U5-01A'}    {'SASH1'      }    {1x1  cell}    {'YEATS4'      }    {1x3  cell}    {'SARC'}     856       6      1.4858e+08     {'-'}      1630      12       6.953e+07     {'+'}        0.011307    1.6e-07     2.479e-06    "inter_chr"         5        1.571e+05         78123    {'tier 3'}
+        17         {'TCGA-DX-AB2G-01A'}    {'SASH1'      }    {1x1  cell}    {'YEATS4'      }    {1x3  cell}    {'SARC'}     856       6      1.4873e+08     {'-'}      1630      12      6.9571e+07     {'+'}        0.011307    1.6e-07     2.479e-06    "inter_chr"         5        1.571e+05         78123    {'tier 3'}
+        18         {'TCGA-3B-A9HS-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7955e+07     {'+'}      1657      12      8.2917e+07     {'-'}        0.012768    1.8e-07    1.7611e-05    "deletion"          6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-DX-A1L4-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7725e+07     {'-'}      1657      12      8.2737e+07     {'+'}        0.012768    1.8e-07    1.7611e-05    "tandem_dup"        6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-DX-A23R-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7697e+07     {'+'}      1657      12       8.274e+07     {'-'}        0.012768    1.8e-07    1.7611e-05    "deletion"          6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-DX-A23R-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7701e+07     {'+'}      1657      12       8.274e+07     {'+'}        0.012768    1.8e-07    1.7611e-05    "inversion"         6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-DX-A23R-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7884e+07     {'+'}      1657      12      8.2756e+07     {'+'}        0.012768    1.8e-07    1.7611e-05    "inversion"         6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-DX-A3M1-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7858e+07     {'-'}      1657      12      8.2696e+07     {'-'}        0.012768    1.8e-07    1.7611e-05    "inversion"         6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-DX-A3M1-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.8073e+07     {'-'}      1657      12      8.2817e+07     {'+'}        0.012768    1.8e-07    1.7611e-05    "tandem_dup"        6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-DX-A3M1-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.8091e+07     {'+'}      1657      12      8.2869e+07     {'-'}        0.012768    1.8e-07    1.7611e-05    "deletion"          6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-FX-A3NK-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7771e+07     {'+'}      1657      12      8.2766e+07     {'+'}        0.012768    1.8e-07    1.7611e-05    "inversion"         6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-FX-A3NK-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7771e+07     {'+'}      1657      12      8.2777e+07     {'-'}        0.012768    1.8e-07    1.7611e-05    "deletion"          6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-FX-A3NK-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12       5.779e+07     {'-'}      1657      12      8.2702e+07     {'+'}        0.012768    1.8e-07    1.7611e-05    "tandem_dup"        6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-FX-A3NK-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7944e+07     {'-'}      1657      12      8.2697e+07     {'+'}        0.012768    1.8e-07    1.7611e-05    "tandem_dup"        6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-WK-A8XO-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7761e+07     {'-'}      1657      12      8.2864e+07     {'-'}        0.012768    1.8e-07    1.7611e-05    "inversion"         6       1.2855e+05         68801    {'tier 3'}
+        18         {'TCGA-WK-A8XO-01A'}    {'CDK4*'      }    {1x17 cell}    {'TMTC2'       }    {1x1  cell}    {'SARC'}    1607      12      5.7815e+07     {'+'}      1657      12      8.2808e+07     {'+'}        0.012768    1.8e-07    1.7611e-05    "inversion"         6       1.2855e+05         68801    {'tier 3'}
+        19         {'TCGA-3B-A9HL-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8233e+07     {'+'}      1661      12      8.4854e+07     {'-'}        0.016637    2.5e-07    5.2372e-05    "deletion"          5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-3B-A9HL-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8269e+07     {'+'}      1661      12      8.4864e+07     {'+'}        0.016637    2.5e-07    5.2372e-05    "inversion"         5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-DX-A23R-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8182e+07     {'+'}      1661      12      8.4886e+07     {'+'}        0.016637    2.5e-07    5.2372e-05    "inversion"         5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-DX-A23R-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8565e+07     {'-'}      1661      12      8.4864e+07     {'-'}        0.016637    2.5e-07    5.2372e-05    "inversion"         5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-DX-A2J0-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8234e+07     {'-'}      1661      12      8.4918e+07     {'+'}        0.016637    2.5e-07    5.2372e-05    "tandem_dup"        5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-DX-A2J0-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8378e+07     {'+'}      1661      12      8.4882e+07     {'-'}        0.016637    2.5e-07    5.2372e-05    "deletion"          5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-DX-A2J0-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8567e+07     {'+'}      1661      12      8.4981e+07     {'+'}        0.016637    2.5e-07    5.2372e-05    "inversion"         5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-DX-A2J0-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8588e+07     {'+'}      1661      12      8.4972e+07     {'-'}        0.016637    2.5e-07    5.2372e-05    "deletion"          5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-DX-A3U5-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8162e+07     {'+'}      1661      12      8.4828e+07     {'-'}        0.016637    2.5e-07    5.2372e-05    "deletion"          5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-DX-A3U5-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8535e+07     {'+'}      1661      12      8.4951e+07     {'+'}        0.016637    2.5e-07    5.2372e-05    "inversion"         5       1.6743e+05         57241    {'tier 3'}
+        19         {'TCGA-FX-A2QS-01A'}    {'NAV3'       }    {1x2  cell}    {'SLC6A15'     }    {1x1  cell}    {'SARC'}    1648      12      7.8318e+07     {'-'}      1661      12      8.4808e+07     {'+'}        0.016637    2.5e-07    5.2372e-05    "tandem_dup"        5       1.6743e+05         57241    {'tier 3'}
+        20         {'TCGA-DX-A1L4-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7864e+07     {'-'}      1629      12      6.8774e+07     {'-'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A23T-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.8011e+07     {'+'}      1629      12      6.8707e+07     {'+'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A23T-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.8016e+07     {'+'}      1629      12       6.878e+07     {'+'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A23T-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.8025e+07     {'+'}      1629      12      6.8841e+07     {'+'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A23Z-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12       6.766e+07     {'-'}      1629      12        6.87e+07     {'+'}        0.030511      5e-07    0.00032956    "tandem_dup"       12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A2IZ-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7742e+07     {'+'}      1629      12        6.88e+07     {'-'}        0.030511      5e-07    0.00032956    "deletion"         12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A2IZ-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7981e+07     {'+'}      1629      12      6.8694e+07     {'-'}        0.030511      5e-07    0.00032956    "deletion"         12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A2IZ-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.8125e+07     {'-'}      1629      12      6.8884e+07     {'+'}        0.030511      5e-07    0.00032956    "tandem_dup"       12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A3U6-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7785e+07     {'-'}      1629      12       6.898e+07     {'-'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A3U6-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7914e+07     {'-'}      1629      12      6.8758e+07     {'-'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A6BF-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7826e+07     {'+'}      1629      12      6.8885e+07     {'-'}        0.030511      5e-07    0.00032956    "deletion"         12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A6BF-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7829e+07     {'-'}      1629      12      6.9018e+07     {'+'}        0.030511      5e-07    0.00032956    "tandem_dup"       12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-A6BF-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.8096e+07     {'-'}      1629      12      6.8731e+07     {'+'}        0.030511      5e-07    0.00032956    "tandem_dup"       12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-AB2F-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7913e+07     {'-'}      1629      12      6.8833e+07     {'-'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-AB2G-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12       6.765e+07     {'-'}      1629      12        6.88e+07     {'+'}        0.030511      5e-07    0.00032956    "tandem_dup"       12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-DX-AB2H-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12       6.801e+07     {'+'}      1629      12      6.8786e+07     {'-'}        0.030511      5e-07    0.00032956    "deletion"         12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-FX-A2QS-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12       6.799e+07     {'+'}      1629      12      6.9056e+07     {'+'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-PC-A5DN-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7816e+07     {'-'}      1629      12      6.8749e+07     {'+'}        0.030511      5e-07    0.00032956    "tandem_dup"       12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-SG-A6Z7-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.7704e+07     {'+'}      1629      12      6.8916e+07     {'+'}        0.030511      5e-07    0.00032956    "inversion"        12       1.4823e+05    1.1598e+05    {'tier 3'}
+        20         {'TCGA-SG-A6Z7-01A'}    {'LINC02421'  }    {1x4  cell}    {'MDM2*'       }    {1x5  cell}    {'SARC'}    1627      12      6.8113e+07     {'-'}      1629      12       6.906e+07     {'+'}        0.030511      5e-07    0.00032956    "tandem_dup"       12       1.4823e+05    1.1598e+05    {'tier 3'}
+        21         {'TCGA-DX-A23U-01A'}    {'(MIR4422HG)'}    {1x1  cell}    {'TMEM183A'    }    {1x8  cell}    {'SARC'}      32       1      5.5476e+07     {'+'}       156       1      2.0303e+08     {'+'}        0.053327    9.5e-07    1.5114e-08    "inversion"         2            13511    1.0921e+05    {'tier 2'}
+        21         {'TCGA-DX-AB2O-01A'}    {'(MIR4422HG)'}    {1x1  cell}    {'TMEM183A'    }    {1x8  cell}    {'SARC'}      32       1      5.5495e+07     {'-'}       156       1      2.0288e+08     {'-'}        0.053327    9.5e-07    1.5114e-08    "inversion"         2            13511    1.0921e+05    {'tier 2'}
+
